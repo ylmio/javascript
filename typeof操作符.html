@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>typeof操作符</title>
+</head>
+<body>
+
+作用:
+typeof操作符用来检测变量的数据类型
+注意:typeof 检测null array object均返回object,可以使用运算符 instanceof 来解决这个问题。
+
+<script>
+    var name="peter";
+    console.log(typeof name);//string
+
+    var num=123;
+    console.log(typeof num);//number
+
+    var isFalse=false;
+    console.log(typeof isFalse);//boolean
+
+    var isUndefined=undefined;
+    console.log(typeof isUndefined);//undefined
+
+    var func=function () {};
+    console.log(typeof func);//function
+
+    var isNull=null;
+    console.log(typeof isNull);//object
+
+    var newArray=[];
+    console.log(typeof newArray);//object
+
+    var newObj={"name":"peter","age":20};
+    console.log(typeof newObj);//object
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
