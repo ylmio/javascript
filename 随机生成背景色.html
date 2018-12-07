@@ -15,34 +15,24 @@
     </style>
 </head>
 <body>
-
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-
-<script>
-    window.onload=function(){
-        var divs=document.getElementsByTagName("div");
-        for(var i=0;i<divs.length;i++){
-            divs[i].className="a"+i;
-            divs[i].style.backgroundColor= '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6);
-            divs[i].style.marginTop="10px";
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        window.onload = function () {
+            var divs = document.getElementsByTagName("div");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].className = "a" + i;
+                divs[i].style.backgroundColor = '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6);
+                divs[i].style.marginTop = "10px";
+            }
         }
-    }
-</script>
-
-
-
-
-
-
-
-
+    </script>
 </body>
 </html>
