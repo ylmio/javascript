@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节流</title>
+</head>
+<body>
+
+
+<input type="text" id="throttle">
+
+
+<script>
+    window.onload = function () {
+        //模拟ajax请求
+        function ajax(content) {
+            console.log("ajax request:------ " + content);
+        }
+
+        // function throttle(fun, delay) {
+        //     let last, deferTimer;
+        //     return function (args) {
+        //         let that = this;
+        //         let _args = arguments;
+        //         var now = +new Date();
+        //         if (last && now < last + delay) {
+        //             clearTimeout(deferTimer);
+        //             deferTimer = setTimeout(function () {
+        //                 last = now;
+        //                 fun.apply(that, _args);
+        //             }, delay);
+        //         } else {
+        //             last = now;
+        //             fun.apply(that, _args);
+        //         }
+        //     }
+        // }
+
+        function throttle(cb, delay = 200) {
+            var _this = this;
+            let now = Date.now();
+            return function () {
+                if (Date.now() - now < delay) return;
+                cb && cb.apply(_this, arguments);
+                now = Date.now();
+            }
+        }
+        var throttleAjax = throttle(ajax, 1000);
+        var throttleInput = document.getElementById("throttle");
+        throttleInput.addEventListener("keyup", function (e) {
+            throttleAjax(e.target.value);
+        })
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
