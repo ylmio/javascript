@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<input type="text" id="normalInput">
+
+
+
+<script>
+    // function ajax(content){
+    //     console.log("request: "+content)
+    // }
+    //
+    // var normalInput=document.getElementById("normalInput");
+    //
+    // normalInput.addEventListener("keyup",function(e){
+    //     ajax(e.target.value)
+    // })
+
+    window.onload = function () {
+        function ajax(content) {
+            console.log("response:" + content);
+        }
+        function debounce(fun, delay) {
+            return function (args) {
+                //获取函数的作用域和变量
+                var that = this;
+                var _args = args;
+                //每次事件都会触发，都会清除当前的timeer,然后重写超时调用
+                clearTimeout(fun.id);
+                fun.id = setTimeout(function () {
+                    fun.call(that, _args);
+                }, delay);
+            }
+        }
+        var normalInput = document.getElementById("normalInput");
+        var debounceAjax = debounce(ajax, 500);
+        normalInput.addEventListener("keyup", function (e) {
+            debounceAjax(e.target.value);
+        })
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>
