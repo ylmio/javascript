@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c8fad7-78d1-4d7d-a30c-79dba7f4e761" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/AjaxObj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/isCardId.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,24 +61,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="244" />
-          <entry key="txt" value="28" />
+          <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="244" />
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="PLAIN_TEXT" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="3" />
+          <entry key="js" value="5" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="2" />
         </counts>
       </usages-collector>
@@ -109,11 +109,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/AjaxObj.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
               <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/CheckNull.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/isCardId.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +160,8 @@
         <option value="$PROJECT_DIR$/common/DIALOG_UTIL.js" />
         <option value="$PROJECT_DIR$/common/CACHE_UTIL.js" />
         <option value="$PROJECT_DIR$/common/AjaxObj.js" />
+        <option value="$PROJECT_DIR$/common/CheckNull.js" />
+        <option value="$PROJECT_DIR$/common/isCardId.js" />
       </list>
     </option>
   </component>
@@ -214,7 +237,7 @@
       <workItem from="1544952433906" duration="86000" />
       <workItem from="1544967408645" duration="861000" />
       <workItem from="1545008397867" duration="1042000" />
-      <workItem from="1545209557707" duration="335000" />
+      <workItem from="1545209557707" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="原生js数组的jion()方法">
       <created>1541688001649</created>
@@ -265,11 +288,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545209834655</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AjaxObject函数封装">
+      <created>1545209927152</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545209927152</updated>
+    </task>
+    <task id="LOCAL-00009" summary="CheckNull函数封装">
+      <created>1545209990230</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545209990231</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10442000" />
+    <option name="totallyTimeSpent" value="10699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -325,7 +362,9 @@
     <MESSAGE value="执行环境和作用域" />
     <MESSAGE value="..." />
     <MESSAGE value="h5缓存封装函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="h5缓存封装函数" />
+    <MESSAGE value="AjaxObject函数封装" />
+    <MESSAGE value="CheckNull函数封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="CheckNull函数封装" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/执行环境和作用域.md">
@@ -375,6 +414,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/CheckNull.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/isCardId.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
