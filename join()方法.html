@@ -63,7 +63,18 @@ separator 指定要使用的分割符。如果省略该参数，则使用逗号�
     }
 
     var result=addSomeNumber(100);
+    console.log(result);//300
+
+    var addSomeNumber=function(num){
+        return num+100;
+    };
+    addSomeNumber=function(num){
+        return num+200;
+    };
+    var result=addSomeNumber(100);
     console.log(result);
+
+
 </script>
 
 

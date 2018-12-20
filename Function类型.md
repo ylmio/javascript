@@ -56,4 +56,14 @@ function addSomeNumber(num){
 var result=addSomeNumber(100);
 console.log(result);//300
 ```
-显然，这个例子
+显然，这个例子中声明了两个同名函数，而结果则是后面的函数覆盖了前面的函数。以上代码实际上与下面的代码没有什么区别。
+```js
+var addSomeNumber=function(num){
+    return num+100;
+};
+addSomeNumber=function(num){
+    return num+200;
+};
+var result=addSomeNumber(100);
+console.log(result);//300
+```
