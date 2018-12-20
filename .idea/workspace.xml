@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36c8fad7-78d1-4d7d-a30c-79dba7f4e761" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/INPUT_UTIL.js" afterDir="false" />
-    </list>
+    <list default="true" id="36c8fad7-78d1-4d7d-a30c-79dba7f4e761" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -49,7 +47,7 @@
     <session id="595397328">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.25" value="1" />
@@ -60,24 +58,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="244" />
-          <entry key="txt" value="69" />
+          <entry key="txt" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="244" />
-          <entry key="PLAIN_TEXT" value="69" />
+          <entry key="PLAIN_TEXT" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="7" />
+          <entry key="js" value="8" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="2" />
         </counts>
       </usages-collector>
@@ -90,11 +88,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
               <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -147,11 +140,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/INPUT_UTIL.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/checkPhone.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -181,6 +183,7 @@
         <option value="$PROJECT_DIR$/common/isCardId.js" />
         <option value="$PROJECT_DIR$/common/judgeAge.js" />
         <option value="$PROJECT_DIR$/common/INPUT_UTIL.js" />
+        <option value="$PROJECT_DIR$/common/checkPhone.js" />
       </list>
     </option>
   </component>
@@ -256,7 +259,7 @@
       <workItem from="1544952433906" duration="86000" />
       <workItem from="1544967408645" duration="861000" />
       <workItem from="1545008397867" duration="1042000" />
-      <workItem from="1545209557707" duration="750000" />
+      <workItem from="1545209557707" duration="1454000" />
     </task>
     <task id="LOCAL-00001" summary="原生js数组的jion()方法">
       <created>1541688001649</created>
@@ -335,11 +338,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545210249001</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="输入框内容验证">
+      <created>1545210343769</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545210343769</updated>
+    </task>
+    <task id="LOCAL-00013" summary="手机号码验证">
+      <created>1545210390663</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545210390663</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10857000" />
+    <option name="totallyTimeSpent" value="11561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -399,7 +416,9 @@
     <MESSAGE value="CheckNull函数封装" />
     <MESSAGE value="身份id验证函数" />
     <MESSAGE value="年龄大小验证函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="年龄大小验证函数" />
+    <MESSAGE value="输入框内容验证" />
+    <MESSAGE value="手机号码验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="手机号码验证" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/执行环境和作用域.md">
@@ -430,11 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,6 +494,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/checkPhone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>

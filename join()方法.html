@@ -14,7 +14,7 @@ separator 指定要使用的分割符。如果省略该参数，则使用逗号�
 用于将一个数组中的所有元素转换成一个字符串，元素是通过指定的分隔符进行分隔的。
 
 <script>
-    let cities=["北京","上海","广州","深圳"];
+    let cities=["北京","上海","广州","深圳","南京"];
     let newCities=cities.join();
     console.log(newCities);//北京,上海,广州,深圳
 
@@ -29,6 +29,41 @@ separator 指定要使用的分割符。如果省略该参数，则使用逗号�
     console.log(newColors);
     console.log(typeof (newColors));//string
 
+
+
+
+    function sum(num1,num2){
+        return num1+num2;
+    }
+
+    var sum=function(num1,num2){
+        return num1+num2;
+    }
+
+    var sum=new Function("num1","num2",
+        "return num1+num2");//不推荐
+
+    function sum(num1,num2){
+        return num1+num2;
+    }
+    console.log(sum(10,10));//20
+
+    var anotherSum=sum;
+    console.log(anotherSum(10,10));//20
+
+    var sum=null;
+    console.log(anotherSum(10,10));//20
+
+    function addSomeNumber(num){
+        return num+100;
+    }
+
+    function addSomeNumber(num){
+        return num+200;
+    }
+
+    var result=addSomeNumber(100);
+    console.log(result);
 </script>
 
 
