@@ -76,3 +76,11 @@ function sum(num1,num2){
     return num1+num2;
 }
 ```
+以上代码完全可以正常运行。因为在代码开始执行之前，解析器就已经通过一个名为**函数声明提升**（function declaration hoisting）的过程,读取并将函数声明添加到执行环境中。对代码求值时，JavaScript引擎在第一遍会声明函数并将它们放到源代码树的顶部。所以，即使声明函数的代码在调用它的代码后面，JavaScript引擎也能把函数声明提升到顶部。如果像下面例子所示的，把上面的函数声明改为等价的函数表达式，就会在执行期间导致错误。
+```js
+console.log(sum(10,10));//Uncaught TypeError: sum is not a function
+var sum=function(num1,num2){
+    return num1+num2;
+}
+```
+以上代码之所以会在运行期间产生错误，原因在于函数位于初始化语句中，而不是一个函数声明。换句话说，在执行到函数所在的语句之前，变量sum中不会保存有队函数的引用。
