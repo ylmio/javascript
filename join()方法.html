@@ -30,49 +30,10 @@ separator 指定要使用的分割符。如果省略该参数，则使用逗号�
     console.log(typeof (newColors));//string
 
 
-
-
+    console.log(sum(10,10));
     function sum(num1,num2){
         return num1+num2;
     }
-
-    var sum=function(num1,num2){
-        return num1+num2;
-    }
-
-    var sum=new Function("num1","num2",
-        "return num1+num2");//不推荐
-
-    function sum(num1,num2){
-        return num1+num2;
-    }
-    console.log(sum(10,10));//20
-
-    var anotherSum=sum;
-    console.log(anotherSum(10,10));//20
-
-    var sum=null;
-    console.log(anotherSum(10,10));//20
-
-    function addSomeNumber(num){
-        return num+100;
-    }
-
-    function addSomeNumber(num){
-        return num+200;
-    }
-
-    var result=addSomeNumber(100);
-    console.log(result);//300
-
-    var addSomeNumber=function(num){
-        return num+100;
-    };
-    addSomeNumber=function(num){
-        return num+200;
-    };
-    var result=addSomeNumber(100);
-    console.log(result);
 
 
 </script>
