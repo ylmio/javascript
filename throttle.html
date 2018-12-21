@@ -93,9 +93,51 @@
     var sortByAge=data.sort(createComparisonFunction("age"));
     console.log(sortByAge[0].name);// zhang
 
+	function callFunction(something) {  
+	    for (var item in something) {  
+	      console.log(item + ": " + something[item]);  
+	    }  
+	}  
+	  
+  function getSome(obj, callback) {  
+    callback(obj);  
+  }  
+  
+  getSome({name: "CSDN", lang: "Javascript",aaa:"CLASS",bbb:"Math"}, callFunction); 
 
 
+	var studentsData=[
+						{"name":"mike",age:17},
+						{"name":"loren",age:18},
+						{"name":"frank",age:19}
+					];
+	function compareFunctionByName(object1,object2){
+		var value1=object1["name"];
+		var value2=object2["name"];
+		if(value1<value2){
+			return -1;
+		}else if(value1>value2){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
 
+	var sortByName=studentsData.sort(compareFunctionByName);
+	console.log(sortByName[0].name);//frank,loren,mike
+	function compareFunctionByAge(object1,object2){
+		var value1=object1["age"];
+		var value2=object2["age"];
+		if(value1<value2){
+			return -1;
+		}else if(value1>value2){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+	var sortByAge=studentsData.sort(compareFunctionByAge);
+	console.log(sortByAge);//mike,loren,frank
 
 
 </script>
