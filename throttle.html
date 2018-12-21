@@ -139,6 +139,23 @@
 	var sortByAge=studentsData.sort(compareFunctionByAge);
 	console.log(sortByAge);//mike,loren,frank
 
+	function compareFunction(filedName){
+		return function(object1,object2){
+			var value1=object1[filedName];
+			var value2=object2[filedName];
+			if(value1<value2){
+				return -1;
+			}else if(value1>value2){
+				return 1;
+			}else{
+				return 0;
+			}
+		}
+	}
+	var  sortByName=studentsData.sort(compareFunction("name"));
+	console.log(sortByName[0].name);//frank
+	var sortByAge=studentsData.sort(compareFunction("age"));
+	console.log(sortByAge[0].age);//17
 
 </script>
 
