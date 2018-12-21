@@ -11,20 +11,167 @@
 
 
 <script>
-var obj = {
-	sum: 0,
-	add: function(num1, num2){
-		this.sum = num1 + num2;
+    window.onload = function () {
+        //模拟ajax请求
+        function ajax(content) {
+            console.log("ajax request:------ " + content);
+        }
+
+        function throttle(fun, delay) {
+            let last, deferTimer;
+            return function (args) {
+                let that = this;
+                let _args = arguments;
+                var now = +new Date();
+                if (last && now < last + delay) {
+                    clearTimeout(deferTimer);
+                    deferTimer = setTimeout(function () {
+                        last = now;
+                        fun.apply(that, _args);
+                    }, delay);
+                } else {
+                    last = now;
+                    fun.apply(that, _args);
+                }
+            }
+        }
+
+        function throttle(cb, delay = 200) {
+            var _this = this;
+            let now = Date.now();
+            return function () {
+                if (Date.now() - now < delay) return;
+                cb && cb.apply(_this, arguments);
+                now = Date.now();
+            }
+        }
+        var throttleAjax = throttle(ajax, 1000);
+        var throttleInput = document.getElementById("throttle");
+        throttleInput.addEventListener("keyup", function (e) {
+            throttleAjax(e.target.value);
+        })
+
+    }
+
+
+
+    function callSomeFunction(someFunction,someArguments){
+    	return someFunction(someArguments);
+    }
+
+    function add10(num){
+    	return num+10;
+    }
+
+    var result1=callSomeFunction(add10,10);
+    console.log(result1);//20
+
+    function getGreeting(name){
+    	return "Hello " + name;
+    }
+
+    var result2=callSomeFunction(getGreeting,"peter");
+    console.log(result2);//Hello peter
+
+    function createComparisonFunction(properyName){
+    	return function(object1,object2){
+    		var value1=object1[properyName];
+    		var value2=object2[properyName];
+    		if(value1<value2){
+    			return -1;
+    		}else if(value1>value2){
+    			return 1;
+    		}else{
+    			return 0;
+    		}
+    	};
+    }
+
+    var data=[{"name":"zhang",age:28},{"name":"yang",age:29}];
+    var sortByName=data.sort(createComparisonFunction("name"));
+    console.log(sortByName[0].name);// yang
+    var sortByAge=data.sort(createComparisonFunction("age"));
+    console.log(sortByAge[0].name);// zhang
+
+	function callFunction(something) {  
+	    for (var item in something) {  
+	      console.log(item + ": " + something[item]);  
+	    }  
+	}  
+	  
+  function getSome(obj, callback) {  
+    callback(obj);  
+  }  
+  
+  getSome({name: "CSDN", lang: "Javascript",aaa:"CLASS",bbb:"Math"}, callFunction); 
+
+
+	var studentsData=[
+						{"name":"mike",age:17},
+						{"name":"loren",age:18},
+						{"name":"frank",age:19}
+					];
+	function compareFunctionByName(object1,object2){
+		var value1=object1["name"];
+		var value2=object2["name"];
+		if(value1<value2){
+			return -1;
+		}else if(value1>value2){
+			return 1;
+		}else{
+			return 0;
+		}
 	}
-};
 
-function add(num1, num2, callbackObj, callback){
-	callback.apply(callbackObj, [ num1, num2 ]);
-};
+	var sortByName=studentsData.sort(compareFunctionByName);
+	console.log(sortByName[0].name);//frank,loren,mike
+	function compareFunctionByAge(object1,object2){
+		var value1=object1["age"];
+		var value2=object2["age"];
+		if(value1<value2){
+			return -1;
+		}else if(value1>value2){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+	var sortByAge=studentsData.sort(compareFunctionByAge);
+	console.log(sortByAge);//mike,loren,frank
 
-add(1,2, obj, obj.add);
-console.log(obj.sum);			//=>3
-console.log(window.sum);		//=>undefined
+	function compareFunction(filedName){
+		return function(object1,object2){
+			var value1=object1[filedName];
+			var value2=object2[filedName];
+			if(value1<value2){
+				return -1;
+			}else if(value1>value2){
+				return 1;
+			}else{
+				return 0;
+			}
+		}
+	}
+	var  sortByName=studentsData.sort(compareFunction("name"));
+	console.log(sortByName[0].name);//frank
+	var sortByAge=studentsData.sort(compareFunction("age"));
+	console.log(sortByAge[0].age);//17
+
+
+
+	function add(num1,num2,callback){
+		var sum=num1+num2;
+		if(typeof callback==="function"){
+			callback(sum);
+		}
+	}
+
+	add(100,10,function(sum){
+		console.log(sum);
+	});//110
+	
+
+
 
 
 
