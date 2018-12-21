@@ -4,7 +4,6 @@
     <list default="true" id="36c8fad7-78d1-4d7d-a30c-79dba7f4e761" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Function类型/作为值的函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/Function类型/作为值的函数.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/throttle.html" beforeDir="false" afterPath="$PROJECT_DIR$/throttle.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,15 +64,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="244" />
-          <entry key="md" value="2021" />
+          <entry key="md" value="2317" />
           <entry key="txt" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="244" />
-          <entry key="JavaScript" value="7" />
-          <entry key="Markdown" value="2014" />
+          <entry key="JavaScript" value="9" />
+          <entry key="Markdown" value="2308" />
           <entry key="PLAIN_TEXT" value="102" />
         </counts>
       </usages-collector>
@@ -109,8 +108,8 @@
         <entry file="file://$PROJECT_DIR$/Function类型/作为值的函数.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="666">
-                <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+              <first_editor relative-caret-position="704">
+                <caret line="115" column="22" lean-forward="true" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -234,7 +233,7 @@
       <workItem from="1545209557707" duration="1454000" />
       <workItem from="1545312801010" duration="1074000" />
       <workItem from="1545358550300" duration="4689000" />
-      <workItem from="1545371692441" duration="2582000" />
+      <workItem from="1545371692441" duration="4361000" />
     </task>
     <task id="LOCAL-00001" summary="原生js数组的jion()方法">
       <created>1541688001649</created>
@@ -369,11 +368,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545365971306</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="作为值的函数">
+      <created>1545374659618</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1545374659618</updated>
+    </task>
+    <task id="LOCAL-00021" summary="作为值的函数">
+      <created>1545375912883</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1545375912883</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19906000" />
+    <option name="totallyTimeSpent" value="21685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -533,8 +546,8 @@
     <entry file="file://$PROJECT_DIR$/Function类型/作为值的函数.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="666">
-            <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+          <first_editor relative-caret-position="704">
+            <caret line="115" column="22" lean-forward="true" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
