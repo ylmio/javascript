@@ -71,7 +71,33 @@
     }
 
     var result2=callSomeFunction(getGreeting,"peter");
-    console.log(result2);
+    console.log(result2);//Hello peter
+
+    function createComparisonFunction(properyName){
+    	return function(object1,object2){
+    		var value1=object1[properyName];
+    		var value2=object2[properyName];
+    		if(value1<value2){
+    			return -1;
+    		}else if(value1>value2){
+    			return 1;
+    		}else{
+    			return 0;
+    		}
+    	};
+    }
+
+    var data=[{"name":"zhang",age:28},{"name":"yang",age:29}];
+    var sortByName=data.sort(createComparisonFunction("name"));
+    console.log(sortByName[0].name);// yang
+    var sortByAge=data.sort(createComparisonFunction("age"));
+    console.log(sortByAge[0].name);// zhang
+
+
+
+
+
+
 </script>
 
 
