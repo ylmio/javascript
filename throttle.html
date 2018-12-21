@@ -55,9 +55,23 @@
 
 
 
+    function callSomeFunction(someFunction,someArguments){
+    	return someFunction(someArguments);
+    }
 
+    function add10(num){
+    	return num+10;
+    }
 
+    var result1=callSomeFunction(add10,10);
+    console.log(result1);//20
 
+    function getGreeting(name){
+    	return "Hello " + name;
+    }
+
+    var result2=callSomeFunction(getGreeting,"peter");
+    console.log(result2);
 </script>
 
 
