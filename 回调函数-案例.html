@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>回调函数</title>
+</head>
+<body>
+	
+<script>
+	function callFunction(something){
+		for(var item in something){
+			console.log(item +" : "+something[item]);
+		}
+	}
+	function getSome(obj,callback){
+		callback(obj);
+	}
+	getSome({"name":"zhang","age":28,"sex":"male","address":"shanghai"},callFunction);
+
+
+	var obj={
+		name:null,
+		setName:function(firstName,lastName){
+			this.name=firstName+"-"+lastName;
+		}
+	};
+
+	function getFullName(firstName,lastName,callback,callbackobj){
+		if(typeof callback=="function"){
+			callback.call(callbackobj,firstName,lastName);
+		}
+	};
+
+	getFullName("zhu","ming",obj.setName,obj);
+	console.log(obj.name);//null
+	console.log(window.name);//zhu-ming
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
