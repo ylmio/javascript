@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数绑定</title>
+</head>
+<body>
+	<button id="my-btn">my-btn函数绑定</button>
+	<script>
+		var EventUtil = {
+		    addHandler: function (element, type, handler) {
+		        if (element.addEventListener) {
+		            element.addEventListener(type, handler, false);
+		        } else if (element.attachEvent) {
+		            element.attachEvent("on" + type, handler);
+		        } else {
+		            element["on" + type] = handler;
+		        }
+		    },
+
+		    removeHandler: function (element, type, handler) {
+		        if (element.removeEventListener) {
+		            element.removeEventListener(type, handler, false);
+		        } else if (element.detachEvent) {
+		            element.detachEvent("on" + type, handler);
+		        } else {
+		            element["on" + type] = null;
+		        }
+		    },
+
+		    getEvent: function (event) {
+		        return event ? event : window.event;
+		    },
+
+		    getTarget: function (event) {
+		        return event.target || event.srcElement;
+		    },
+
+		    preventDefault: function (event) {
+		        if (event.preventDefault) {
+		            event.preventDefault();
+		        } else {
+		            event.returnValue = false;
+		        }
+		    },
+
+		    stopPropagation: function (event) {
+		        if (event.stopPropagation) {
+		            event.stopPropagation();
+		        } else {
+		            event.cancelBubbles = true;
+		        }
+		    },
+
+		    getRelatedTarget: function (event) {
+		        if (event.relatedTarger) {
+		            return event.relatedTarget;
+		        } else if (event.toElement) {
+		            return event.toElement;
+		        } else if (event.fromElement) {
+		            return event.fromElement;
+		        } else { return null; }
+		    }
+		}
+
+		var handler = {
+			message: "Event handled",
+
+			handleClick: function(event){
+				console.log(this.message);
+			}
+		};
+
+		var btn = document.getElementById("my-btn");
+		//EventUtil函数不是js自带函数，使用前需进行封装
+		EventUtil.addHandler(btn, "click", handler.handleClick);//undefined
+
+		/*
+		虽然貌似应该打印输出 Event handled,然而实际上显示的是undefined。这个问题在于没有保存handler.handleClick()的环境，所以this对象最后指向了DOM按钮而非handler(IE8中指向window。)可以如下面例子所示，使用一个闭包来修正这个问题。
+		*/
+		var handler = {
+			message: "Event handled",
+
+			handleClick: function(event){
+				console.log(this.message);
+			}
+		};
+
+		var btn = document.getElementById("my-btn");
+		EventUtil.addHandler(btn, "click", function(event){
+			handler.handleClick(event);//Event handled
+		});
+
+		/*
+		这个解决方案在onclick 事件处理程序内使用了一个闭包直接调用handler.handleClick()。当然，这是特定于这段代码的解决方案。 创建多个闭包可能会令代码变得难于理解和调试。因此，很多 JavaScript 库实现了一个可以将函数绑定到指定环境的函数。 这个函数一般都叫 bind()。
+		*/
+
+	</script>
+</body>
+</html>
