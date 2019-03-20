@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.3.1.min.js"></script>
+    <title></title>
+</head>
+<body>
+
+<form>
+    <input id="btn-submit" type="button" value="提交">
+</form>
+
+<script>
+    //    function fncSubmit(){
+    //        setTimeout(function(){
+    //             alert("dddd");
+    //        },1000);
+    //    }
+
+
+    //1.提交按钮点击之后，禁用此按钮
+    // function fncSubmit(){
+    //        setTimeout(function(){
+    //             alert("dddd");
+    //        },1000);
+    //        this.disabled = true;
+    //        console.log(this.disabled);
+    //    }
+    //    document.getElementById("btn-submit").onclick = fncSubmit;
+
+    //2.提交按钮点击之后，覆盖原来的点击事件方法
+    // function fncSubmit(){
+    //         alert("dddd");
+    //        this.onclick = function(){
+    //            alert("您已提交过了，不能重复提交");
+    //        }
+    //    }
+    //    document.getElementById("btn-submit").onclick = fncSubmit;
+
+    //3.给按钮添加变量标志
+    // function fncSubmit(){
+    //     if(!this.isSubmit){
+    //         setTimeout(function(){
+    //         alert("提交表单");
+    //     },1000);
+    // }
+    //     this.isSubmit = true;
+    // }
+
+    // document.getElementById("btn-submit").onclick = fncSubmit;
+
+    //4.使用jquery解绑点击事件
+    // function fncSubmit(){
+    //     setTimeout(function app(){
+    //         alert("订单提交");
+    //     });
+    //     $(this).unbind('click',argruments.call);
+    // }
+    // document.getElementById("btn-submit").onclick = fncSubmit;
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
