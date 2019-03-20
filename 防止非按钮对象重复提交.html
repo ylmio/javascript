@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+        
+        #btn-submit{
+            width: 70px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+<div id="btn-submit" onclick="post()">提交</div>
+
+
+<script>
+$("#btn-submit").click(function(){
+    alert("订单提交");
+});
+let post_flag = false;
+function post(){
+    console.log("dddd");
+    if(post_flag) return;
+    post_flag = true;
+    $.ajax({
+        url:"./post.php",
+        data:{a:1,b:2},
+    }).done(function(data){
+        post_flag = false;
+    }).fail(function(data){
+        post_flag = true;
+    })
+}
+
+var isSent = false;
+var timeout;
+jQuery("#buttonID").click(function () {
+    if (!isSent) {
+        isSent = true;
+        jQuery.ajax({
+                url: "http://test.com",
+                // ....,
+            complete: function () {
+            isSent = false; //ajax失败和成功是都重新设置isSend
+},      });
+        timeout = setTimeout(function() {if(isSent) isSent.abort();  // abort request }, 30000 );//after 30 seconds   }});
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

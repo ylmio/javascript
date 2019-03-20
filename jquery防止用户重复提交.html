@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <button type="submit" id="btn-submit">Submit</button>
+
+    <!--由于AJAX提交数据为异步提交，所以当我们点击提交按钮是通过xmlhttprequest向服务器发送异步请求，-->
+    <!--发送请求需要有处理时间，我们第一次点击的请求尚未完成，就有接二连三的又提交了几次，同时后来发送的-->
+    <!--请求同事也被发送到后台处理了，这种情况如果是数据读取则不会有太大影响，但是涉及到数据提交保存或者-->
+    <!--提交之后多表数据处理就更麻烦了，所以此种情况务必要避免，免得给大家造成麻烦。-->
+
+    <script>
+        $("#btn-submit").click(function(){
+            alert("订单提交");
+
+            $("button[type=submit]").attr('disabled',true)//在按钮提交之后和AJAX提交之前将按钮设置为禁用
+
+            $.ajax({
+
+                url:'/post.php',
+
+                data:{a:1,b:1},
+
+                success:function(){
+                    //在提交成功之后重新启用该按钮
+                    $("input[type=submit]").attr('disabled',false)
+
+                },
+
+                error: function(){
+                    //即使AJAX失败也需要将按钮设置为可用状态，因为有可能是网络问题导致的失败，所以需要将按钮设置为可用
+                    $("input[type=submit]").attr('disabled',false)
+                }
+
+            });
+        });
+    </script>
+
+
+</body>
+</html>
