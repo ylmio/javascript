@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数重载</title>
+</head>
+<body>
+
+<script>
+    var people = {
+        values:["Dean Edwards", "Sam Stephenson", "Alex Russell", "Dean Tom"]
+    }
+    /*
+        我们希望people对象拥有一个find方法
+        1.当不传任何参数时，就把people.values里面的所有元素返回来；
+        2.当传入一个参数时，就把first-name跟这个参数相匹配的元素返回来；
+        3.当传入两个参数时，则把first-name和last-name都匹配的才返回来；
+        因为find方法是根据参数的个数不同而执行不同的操作，所以我们希望有一个addMethod方法，能够如下的为people
+        添加如下的重载：
+    */
+    addMethod(people,"find",function(){});//不传参
+    addMethod(people,"find",function(a){});//传一个参数
+    addMethod(people,"find",function(a,b){});//传两个参数
+
+    function addMethod(object,methodName,fn){
+
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
