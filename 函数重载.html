@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数重载</title>
+</head>
+<body>
+
+<script>
+    var people = {
+        values:["Dean Edwards", "Sam Stephenson", "Alex Russell", "Dean Tom"]
+    };
+    /*
+        我们希望people对象拥有一个find方法
+        1.当不传任何参数时，就把people.values里面的所有元素返回来；
+        2.当传入一个参数时，就把first-name跟这个参数相匹配的元素返回来；
+        3.当传入两个参数时，则把first-name和last-name都匹配的才返回来；
+        因为find方法是根据参数的个数不同而执行不同的操作，所以我们希望有一个addMethod方法，能够如下的为people
+        添加如下的重载：
+    */
+    addMethod(people,"find",function(){});//不传参
+    addMethod(people,"find",function(a){});//传一个参数
+    addMethod(people,"find",function(a,b){});//传两个参数
+
+    function addMethod(object,name,fn){
+        var old = object[name];//把前一次添加的方法保存在一个临时变量old里面
+        object[name] = function(){//重写了object[name]方法
+            //如果调用object[name]方法时，传入的参数个数跟预期的一致，则直接调用
+            if(fn.length === arguments.length){
+                return fn.apply(this,arguments);
+                //否则，判断old是否是函数，如果是，就调用old
+            }else if(typeof old === "function"){
+                return old.apply(this,arguments);
+            };
+        };
+    };
+
+    //下面开始通过addMethod来实现对people.find方法的重载
+
+    //0.不传入参数时，返回people.values里的所有元素
+    addMethod(people,"find",function () {
+        return this.values;
+    });
+
+    //1.传入一个参数时，按first-name的匹配进行返回
+    addMethod(people,"find",function(firstName){
+        var ret = [];
+        for(var i = 0; i<this.values.length; i++){
+            if(this.values[i].indexOf(firstName)===0){
+                ret.push(this.values[i]);
+            };
+        };
+        return ret;
+    });
+
+    //2.传入两个参数时，返回first-name和last-name都匹配的元素
+    addMethod(people,"find",function (firstName,lastName) {
+        var ret = [];
+        for(var i = 0; i<this.values.length; i++){
+            if(this.values[i] === (firstName+ "" +lastName)){
+                ret.push(this.values[i]);
+            };
+        };
+        return ret;
+    });
+
+    //测试
+    console.log(people.find());
+    console.log(people.find("Dean"));
+    console.log(people.find("Alex Russell"));
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
