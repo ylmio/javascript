@@ -15,6 +15,23 @@
     var p = new Person();
     console.log(p);
     // constructor告诉我们当前对象是由哪个构造函数产生的
+
+    //获取产生当前对象的构造函数的名字
+    console.log(p.constructor.name);//Person
+
+    //相当于改变了构造函数Person的原型对象
+    Person.prototype = {
+        constructor:Person,//使用类似Person.prototype修改构造函数的原型对象的方法后，要指明当前对象的指向的时哪个构造函数
+        "name":"撩课",
+        age:18
+    }
+
+    var p1 = new Person();
+    console.log(p1);
+    console.log(p1.constructor.name);//指向Object Person
+
+    // 因此，使用Person.prototype = {}方式改变构造函数的原型对象后，要使用constructor声明当前对象指向哪个原型对象
+
 </script>
 </body>
 </html>
