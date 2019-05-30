@@ -7,11 +7,11 @@
 <body>
 
 
-<script>
+<script type="text/html">
     var demo1= {
-        name : "zhang",
-        logName:function(){
-            console.log(this.name);
+        name : "张",
+        logName:function(param1,param2){
+            console.log(this.name,param1,param2);
         }
     }
     // console.log(demo1);
@@ -19,9 +19,26 @@
         name : "李",
         sex : "男"
     }
-    demo1.logName();
-    demo1.logName.call(demo2)
+    demo1.logName("sss","ddd");
+    // demo1.logName.call(demo2,'mmm','ttt');
+    demo1.logName.apply(demo2,['mmm','ttt']);
 
+</script>
+
+<script>
+    function Person(){
+        this.name = "张";
+        this.age = 15;
+    }
+
+    function Student(){
+        Person.call(this);
+        this.sex = "男";
+        this.name = "李"
+    };
+    var p = new Student();
+    console.log(p);
+    // console.log(p.logName);
 </script>
 
 </body>
