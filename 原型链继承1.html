@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链继承</title>
+</head>
+<body>
+
+<script>
+    // 构造函数Person
+    function Person(){
+        this.name = "angle";
+        this.pets = ["pig","cat"]
+    }
+
+    Person.prototype.run = function () {
+        console.log("run")
+    };
+    // 构造函数Student
+    function Student(){
+        this.num = "123"
+    }
+    //实例化Person
+    var p = new Person();
+
+    //设置子类的原型对象为P
+    Student.prototype = p;
+    //修复子类原型对象的指向问题
+    Student.prototype.constructor = Student;
+
+//子类对象无法访问父类对象的任何东西
+    //继承了父类原型对象的方法，但没有继承父类的属性
+    // Student.prototype = Person.prototype;
+
+    var stu = new Student();
+    console.log(stu);
+    stu.run();
+    console.log(stu.name);
+    console.log(stu.pets);
+    console.log(stu.constructor.name);//Student
+
+</script>
+
+
+
+
+</body>
+</html>

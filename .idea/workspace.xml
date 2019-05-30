@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/throwError2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trycatch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/原型链继承1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -62,11 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/throwError2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="209">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/原型链继承1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -105,6 +113,7 @@
         <option value="$PROJECT_DIR$/throwError.html" />
         <option value="$PROJECT_DIR$/throwError2.html" />
         <option value="$PROJECT_DIR$/trycatch.html" />
+        <option value="$PROJECT_DIR$/原型链继承1.html" />
       </list>
     </option>
   </component>
@@ -172,7 +181,7 @@
       <workItem from="1558452228858" duration="4246000" />
       <workItem from="1558495659390" duration="3085000" />
       <workItem from="1559036257142" duration="1339000" />
-      <workItem from="1559133820738" duration="3672000" />
+      <workItem from="1559133820738" duration="7650000" />
     </task>
     <task id="LOCAL-00001" summary="函数属性和方法">
       <created>1545618887498</created>
@@ -244,11 +253,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559134046373</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="throwError">
+      <created>1559205038816</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559205038816</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17131000" />
+    <option name="totallyTimeSpent" value="21109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -368,8 +384,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/throwError2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/原型链继承1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
