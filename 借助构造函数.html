@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person(){
+        this.name = "张三";
+        this.age = 18;
+        this.zoo = function(){
+            console.log("走")
+        }
+    }
+    Person.prototype.run = function () {
+        console.log("跑");
+    }
+    function Student(){
+        Person.apply(this);
+        this.sex = "男"
+    }
+
+    var stu = new Student();
+    console.log(stu);
+    // console.log(stu.run());
+    console.log(stu.constructor.name);
+
+
+</script>
+</body>
+</html>

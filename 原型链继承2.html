@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person(){
+        this.name = "张三";
+        this.age = 18;
+    }
+    Person.prototype.run = function () {
+        console.log("跑");
+    }
+    function Student(){
+        this.sex = "男"
+    }
+
+    // 1.实例化父类构造函数实例
+    var p = new Person();
+    //2.设置为子类构造函数的原型对象
+    Student.prototype = p;
+    //3.修改constructor的指针问题
+    Student.prototype.constructor = Student;
+
+    var stu = new Student();
+    console.log(stu);
+    stu.run();
+    console.log(stu.constructor.name);
+
+
+</script>
+
+</body>
+</html>
