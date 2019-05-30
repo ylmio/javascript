@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>try catch</title>
+</head>
+<body>
+<script>
+    try{
+        console.log(descript(10, 0));
+    }catch (e) {
+        console.log(e)
+    }finally {
+        console.log("hello finally!")
+    }
+    function descript(a,b){
+        if(0===b){
+            throw "分母不能为0"
+        }
+        return a/b;
+    }
+
+
+    try{
+        foo.bar();
+    }catch (e) {
+        console.log(e);
+        console.log(e.name+":"+e.message);
+    }
+</script>
+</body>
+</html>

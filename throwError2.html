@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>throwError2</title>
+</head>
+<body>
+<script>
+    try{
+        console.log(discovery(10,0));
+    }catch (e) {
+        console.log(e);
+    }finally {
+        console.log("无论如何都会执行");
+        // 137 343 67666
+    }
+    function discovery(a,b){
+        if (0===b){
+            throw "b不能为0"
+        }
+        return a/b;
+    };
+    // console.log(discovery(10, 2));
+
+
+
+
+</script>
+</body>
+</html>
