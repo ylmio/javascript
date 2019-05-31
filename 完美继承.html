@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>寄生组合式继承</title>
+</head>
+<body>
+<script>
+    //寄生组合式继承 = 原型链继承 + 组合式继承 + 寄生式继承
+    // 解决了重复使用的问题
+    function Person(name,pets){
+        this.name = name;
+        this.pets = pets;
+    }
+    Person.prototype.run = function(){
+        console.log("跑！");
+    }
+
+    function Student(num,name,pets){
+        Person.call(this,name,pets);//一定要放到最前面
+        this.num = num
+    };
+
+    //寄生式继承
+    //1.创建一个空的构造函数
+    function Temp(){};
+    //2.将父类的原型设置为此构造函数的原型
+    Temp.prototype = Person.prototype;
+    //3.实例化一个构造函数
+    var stuPrototype = new Temp();
+    //4.将此对象的至指针设置为子类构造函数
+    Student.constructor = stuPrototype;
+
+    var stu1 = new Student("001","小花",["cat","dog"]);
+    var stu2 = new Student("002","小明",["cat","dog","fox"]);
+    console.log(stu1);
+    console.log(stu2);
+
+
+
+
+</script>
+</body>
+</html>

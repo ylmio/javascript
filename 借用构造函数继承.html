@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>借用构造函数继承</title>
 </head>
 <body>
 
 <script>
     function Person(){
         this.name = "张三";
-        this.age = 18;
+        this.pets = ["cat","dog"];
     }
     Person.prototype.run = function(){
         console.log("跑！");
     }
 
     function Student(){
-        this.sex = "男"
+        Person.call(this);//一定要放到最前面
+        this.num = 15
     };
 
     //1.实例化一个父类构造函数
@@ -26,11 +27,14 @@
     //3.修改指针指向问题
     p.constructor = Student;
 
-    var stu = new Student();
-    console.log(stu);
-    console.log(stu.constructor.name);
+    var stu1 = new Student();
+    var stu1P = stu1.pets;
+    stu1P.push("ming");
+    console.log(stu1.pets);
+    var stu2 = new Student();
+    console.log(stu2.pets);
 
-
+// 问题无法修改父类构造函数的值
 </script>
 
 

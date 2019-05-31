@@ -6,11 +6,11 @@
 </head>
 <body>
 <script>
-    // 原型链继承过来的实例属性，如果是引用类型的话，会被多个子类的实例共享
+    // 原型链继承过来的实例属性，如果是引用类型的话，会被多个子类的实例共享（复杂的数据类型）
 
     function Person(){
         this.name = "张三";
-        this.pets = ["cat","dog"];
+        this.pets = ["cat","dog"];//内存地址是一样的
     }
     Person.prototype.run = function () {
         console.log("跑");
@@ -31,7 +31,10 @@
     var stuP = stu2.pets;
     stuP.push("ming");
     console.log(stu2.pets);//(3) ["cat", "dog", "ming"]
-    console.log(stu.pets);//(3) ["cat", "dog", "ming"] 问题
+    console.log(stu.pets);//(3) ["cat", "dog", "ming"] 问题  复杂的数据类型会有问题
+    stu.name = "周杰伦";
+    console.log(stu.name);
+    console.log(stu2.name);
 
 
 </script>
