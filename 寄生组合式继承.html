@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>寄生组合式继承</title>
+</head>
+<body>
+
+<script>
+    function Person(name,age,hobby){
+        this.name= name;
+        this.age = age;
+        this.hobby = hobby;
+    }
+
+    Person.prototype.idefiney = function(){
+        console.log("running");
+    }
+
+    function Worker(num,name,age,hobby){
+        Person.call(this,name,age,hobby);
+        this.num = num;
+    };
+
+    //1.创建一个新的构造函数Temp
+    function Temp(){}
+    //2.设置这个构造函数的原型为父类构造函数
+    Temp.prototype = Person.prototype;
+    //3.实例化一个Temp实例
+    var workerP = new Temp();
+    //4.修改constructor指针问题
+    workerP.constructor = Worker;
+    Worker.prototype = workerP;
+
+    var worker1 = new Worker("001","里",18,["basketball","football"]);
+    console.log(worker1);
+    worker1.idefiney();
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象继承-综合小案例</title>
+</head>
+<body>
+<script>
+    // Animal
+    function Animal(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    Animal.prototype.eat = function () {
+        console.log("吃");
+    };
+    Animal.prototype.run = function () {
+        console.log("跑")
+    };
+
+    //Person
+    function Person(job,name,age){
+        Animal.call(this,name,age);
+        this.job = job;
+    }
+    //1.原型链 寄生式继承
+    function Camp(){};
+    //构造函数的原型连为Animal
+    Camp.prototype = Animal.prototype;
+    //3.实例化一个
+    var campPrototype = new Camp();
+    //4.修改指针问题
+    campPrototype.constructor = Person;
+    Person.prototype = campPrototype;
+
+
+    Person.prototype.jump = function () {
+        console.log("跳")
+    };
+
+    var p = new Person("讲师","李白",500);
+    console.log(p);
+    p.eat();
+    p.run();
+    p.jump();
+
+
+    //Student
+    // function Student(glass,job,name,age){
+    //     Student.call(this,job,name,age);
+    //     this.glass = glass;
+    // }
+    // Student.prototype.study = function () {
+    //     console.log("学习")
+    // };
+    //
+    // //1.创建一个构造函数Temp
+    // function Temp(){}
+    // //2.将这个构造函数的原型为父类构造函数
+    // Person.prototype = Temp;
+    // //3.实例化一个Temp 对象
+    // var temp = new Temp();
+    // //修改constructor指针
+    // temp.constructor = Student;
+    //
+    // var stu = new Student("一年二班","学生","张扬");
+    // // console.log(stu);
+
+
+</script>
+</body>
+</html>
