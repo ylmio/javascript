@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function Person(){
+        this.name = "张三";
+        this.age = 18;
+    }
+    Person.prototype.run = function(){
+        console.log("跑！");
+    }
+
+    function Student(){
+        this.sex = "男"
+    };
+
+    //1.实例化一个父类构造函数
+    var p = new Person();
+    //2.将子类构造函数的原型指向这个对象
+    Student.prototype = p;
+    //3.修改指针指向问题
+    p.constructor = Student;
+
+    var stu = new Student();
+    console.log(stu);
+    console.log(stu.constructor.name);
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
