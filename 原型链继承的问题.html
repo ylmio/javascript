@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链继承的问题</title>
+</head>
+<body>
+<script>
+    // 原型链继承过来的实例属性，如果是引用类型的话，会被多个子类的实例共享
+
+    function Person(){
+        this.name = "张三";
+        this.pets = ["cat","dog"];
+    }
+    Person.prototype.run = function () {
+        console.log("跑");
+    }
+    function Student(){
+        this.num = 10
+    }
+
+    // 1.实例化父类构造函数实例
+    var p = new Person();
+    //2.设置为子类构造函数的原型对象
+    Student.prototype = p;
+    //3.修改constructor的指针问题
+    Student.prototype.constructor = Student;
+
+    var stu = new Student();
+    var stu2 = new Student();
+    var stuP = stu2.pets;
+    stuP.push("ming");
+    console.log(stu2.pets);//(3) ["cat", "dog", "ming"]
+    console.log(stu.pets);//(3) ["cat", "dog", "ming"] 问题
+
+
+</script>
+</body>
+</html>
