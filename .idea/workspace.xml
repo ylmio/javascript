@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/寄生组合式继承.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/面向对象-继承精讲/对象继承-综合小案例.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -146,8 +144,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="117" />
-    <option name="y" value="72" />
+    <option name="x" value="116" />
+    <option name="y" value="71" />
     <option name="width" value="1450" />
     <option name="height" value="865" />
   </component>
@@ -222,7 +220,7 @@
       <workItem from="1559133820738" duration="9654000" />
       <workItem from="1559212427259" duration="1598000" />
       <workItem from="1559228698620" duration="1838000" />
-      <workItem from="1559282033399" duration="13951000" />
+      <workItem from="1559282033399" duration="13970000" />
     </task>
     <task id="LOCAL-00001" summary="函数属性和方法">
       <created>1545618887498</created>
@@ -357,15 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559289077977</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="cccc">
+      <created>1559297287562</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1559297287562</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40500000" />
+    <option name="totallyTimeSpent" value="40519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19431593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
