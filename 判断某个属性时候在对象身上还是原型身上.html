@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>判断某个属性是在对象身上还是原型身上</title>
+</head>
+<body>
+<script>
+    function Person(name,age){
+        this.name = name;
+        this.age = age;
+    };
+    Person.prototype.run = "跑"
+
+    var p = new Person("liming",18)
+
+    console.log("run" in p);//true
+    console.log(p.hasOwnProperty("name"));//true
+    console.log(p.hasOwnProperty("run"));//false
+
+</script>
+</body>
+</html>
