@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象-计算器</title>
+</head>
+<body>
+
+
+<script>
+    var Calculator = {
+        result : 0,
+        jia:function(num){
+            this.result += num;
+            return this;//this 指向Calculator
+        },
+        jian:function(num){
+            this.result -= num;
+            return this;//this 指向 Calculator
+        },
+        cheng:function(num){
+            this.result *= num;
+            return this;//this 指向Calculator
+        },
+        chu:function(num){
+            this.result /= num;
+            return this;//this 指向Calculator
+        },
+        log:function(){
+            console.log(this.result);
+        },
+        reset:function () {
+            this.result = 0;
+        }
+    }
+    //(6+6)-2/2*5
+    Calculator.jia(6).jia(6).jian(2).chu(2).cheng(5).log();
+    //清0
+    Calculator.reset();
+    //2+2-1*10
+    Calculator.jia(2).jia(2).jian(1).cheng(10).log();
+</script>
+
+
+
+
+
+</body>
+</html>
