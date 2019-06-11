@@ -8,6 +8,13 @@
 
 
 <script>
+    /*
+    * 链式调用
+    * 字面量创建函数
+    * 要使用return 才有返回值
+    * this 指向 Calculator
+    * 再次使用 Calculator 要清零，调用reset方法，否则累计计算
+    * */
     var Calculator = {
         result : 0,
         jia:function(num){
