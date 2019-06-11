@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>面向对象-绚丽小球</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html,body,div{
+            width: 100%;
+            height: 100%;
+        }
+        #box{
+            background-color: #000;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    
+</div>
+<script src="https://cdn.bootcss.com/underscore.js/1.9.1/underscore-min.js"></script>
+<script src="Ball.js"></script>
+<script>
+    //  1.获取父标签
+    var box = document.getElementById("box");
+
+    //  2.监听鼠标在盒子上的移动
+    var colorArr = ["red","green","blue","orange","purple","pink"];
+    var ballArr = [];
+    box.onmousemove = function (ev) {
+        //  2.1创建小球
+        var ball = new Ball({
+            parentId:"box",
+            left:ev.clientX,
+            top:ev.clientY,
+            backgroundColor:colorArr[_.random(0,colorArr.length-1)]
+        });
+        ball.render();
+
+        //  2.2 把创建的小球放到数组中
+        ballArr.push(ball);
+    }
+
+    //  3.设置定时器
+    setInterval(function () {
+        //  3.1清除上一帧产生的小球
+        for(var i=0;i<box.children.length;i++){
+            box.children[i].remove();
+        }
+        //  3.2让小球移动，变小
+        for(var j=0;j<ballArr.length;j++){
+            ballArr[j].render();
+            ballArr[j].update();
+        }
+    },60)
+</script>
+</body>
+</html>
