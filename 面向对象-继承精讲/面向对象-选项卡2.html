@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>面向对象-选项卡</title>
+    <style>
+        #tab_head>ul>li{
+            list-style: none;
+            display: inline-block;
+            padding: 0 15px;
+            border:1px solid gray;
+        }
+        #tab_head>ul>li.selected{
+            background: darkgray;
+        }
+        #tab_head>ul>li:hover{
+            cursor: pointer;
+        }
+        #tab_content div{
+            width: 420px;
+            height: 200px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="tab">
+    <!--    头部-->
+    <div id="tab_head">
+        <ul>
+            <li class="selected">公告</li>
+            <li>规划</li>
+            <li>论坛</li>
+            <li>安全</li>
+            <li>公益</li>
+        </ul>
+    </div>
+    <!--    主要内容-->
+    <div id="tab_content">
+        <div class="dom" style="background: aqua;display: block;">公告</div>
+        <div class="dom" style="background: darkgreen">规划</div>
+        <div class="dom" style="background: darkmagenta">论坛</div>
+        <div class="dom" style="background: chartreuse">安全</div>
+        <div class="dom" style="background: pink">公益</div>
+    </div>
+</div>
+<script src="Tab.js"></script>
+
+</body>
+</html>

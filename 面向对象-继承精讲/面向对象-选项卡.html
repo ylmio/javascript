@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>面向对象-选项卡</title>
+    <style>
+        #tab_head>ul>li{
+            list-style: none;
+            display: inline-block;
+            padding: 0 15px;
+            border:1px solid gray;
+        }
+        #tab_head>ul>li.selected{
+            background: darkgray;
+        }
+        #tab_head>ul>li:hover{
+            cursor: pointer;
+        }
+        #tab_content div{
+            width: 420px;
+            height: 200px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="tab">
+<!--    头部-->
+    <div id="tab_head">
+        <ul>
+            <li class="selected">公告</li>
+            <li>规划</li>
+            <li>论坛</li>
+            <li>安全</li>
+            <li>公益</li>
+        </ul>
+    </div>
+<!--    主要内容-->
+    <div id="tab_content">
+        <div class="dom" style="background: aqua;display: block;">公告</div>
+        <div class="dom" style="background: darkgreen">规划</div>
+        <div class="dom" style="background: darkmagenta">论坛</div>
+        <div class="dom" style="background: chartreuse">安全</div>
+        <div class="dom" style="background: pink">公益</div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script>
+    window.onload=function () {
+        //1.获取需要的标签
+        var allLis = $("tab_head").getElementsByTagName("li");
+        var allDom = $("tab_content").getElementsByClassName("dom");
+        // console.log(allLis,allDom);
+
+        //遍历监听
+        for(var i=0;i<allLis.length;i++){
+            var li = allLis[i];
+            li.id = i;
+            li.onmouseover = function(){
+                //2.1 所有的都不被选中
+                for(var j=0;j<allLis.length;j++){
+                    allLis[j].className = "";
+                    allDom[j].style.display = "none";
+                }
+                //2.2 当前的li被选中
+                this.className = "selected";
+                console.log(allDom[this.id]);
+                allDom[this.id].style.display = "block";
+            }
+        }
+        /*
+        * 根据id获取标签
+        * @param {string}id
+        * @return {object}
+        * */
+        function $(id){
+            return typeof id === "string"?document.getElementById(id):null;
+        }
+    }
+</script>
+</body>
+</html>
