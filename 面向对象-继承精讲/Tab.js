@@ -1,7 +1,7 @@
 function TabsFn(){
     //属性
-    this.lis = document.getElementsByTagName("li");
-    this.contents = document.getElementsByClassName("dom");
+    this.lis = $("tab_head").getElementsByTagName("li");
+    this.contents = $("tab_content").getElementsByClassName("dom");
 }
 //原型对象
 TabsFn.prototype = {
