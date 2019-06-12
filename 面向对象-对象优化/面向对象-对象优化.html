@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象-对象优化</title>
+</head>
+<body>
+
+<script type="text/html">
+    // 使用字面的方式创建对象
+    var p1 = {
+        name : "张三",
+        age :18,
+        run : function () {
+            console.log(this.name + "跑");
+        }
+    };
+    console.log(p1.name);
+    p1.run();
+
+    var p2 = {
+        name : "李四",
+        age :28,
+        run : function () {
+            console.log(this.name + "跑");
+        }
+    };
+    console.log(p2.name);
+    p2.run();
+</script>
+<script type="text/html">
+    // 使用内置构造函数方式创建对象
+    var p1 = new Object();
+    p1.name = "张三";
+    p1.run = function () {
+        console.log(this.name + "跑");
+    }
+    console.log(p1.name);
+    p1.run();
+
+    var p2 = new Object();
+    p2.name = "李四";
+    p2.run = function () {
+        console.log(this.name + "跑");
+    }
+    console.log(p2.name);
+    p2.run();
+</script>
+<script type="text/html">
+    //自定义构造函数和简单构造函数的对比
+    function Person(name,age,sex){
+        //1.自动创建一个空对象，并将这个空对象的地址 this--->新创建的对象
+        // var this = new Object();
+
+        //2.this 给空对象 绑定属性 行为
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+
+        //3.返回 this
+        // return this;
+    }
+
+    var p = new Person();
+</script>
+<script type="text/html">
+    //如果返回的是对象，则直接把这个对象给外界
+
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+        return [1,2,3];
+    };
+
+    var p = new Person("张三",18);
+    console.log(p);
+</script>
+<script>
+    /*
+    *终极版本
+    * */
+    function  Dog(option) {
+        this._init(option);
+    }
+
+    Dog.prototype = {
+        //属性
+        _init :function(option){
+            this.name = option.name;
+            this.age = option.age;
+            this.doFriends = option.doFriends;
+        },
+        //行为
+        eat : function (something) {
+            console.log(this.name + "吃" + something)
+        },
+        eat : function (somewhere) {
+            console.log(this.name + "跑" + somewhere)
+        }
+    }
+
+    //产生对象
+    var smallDog = new Dog({name:"小花",age:1,doFriends:["球球","丫丫"]});
+    var bigDog = new Dog({name:"小六",age:1,doFriends:["球球","丫丫","hhh"]});
+    console.log(smallDog.eat === bigDog.eat);//true
+
+</script>
+</body>
+</html>
