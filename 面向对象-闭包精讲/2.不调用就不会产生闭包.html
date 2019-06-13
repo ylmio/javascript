@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用心做好一件事，实乃人生之首务</title>
+</head>
+<body>
+<script>
+    function fn1() {
+        var num = 10;
+        function fn2(){
+            num++;
+            console.log(num);
+        }
+        return fn2;//注意，不是fn2的返回 结果，不能写成fn2()
+    }
+    var f = fn1();//注意，此处是赋值操作，不能直接写成fn1()调用
+    f();
+
+</script>
+</body>
+</html>

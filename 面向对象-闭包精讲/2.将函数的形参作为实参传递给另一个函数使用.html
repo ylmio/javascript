@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>将函数的形参作为实参传递给另一个函数使用</title>
+</head>
+<body>
+<script>
+    function logMsg(msg,time){
+        setInterval(function () {
+            console.log(msg);
+        },time);
+    };
+    logMsg("liming",1000)
+</script>
+</body>
+</html>
