@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/面向对象-继承精讲/面向对象-弹出框.html" beforeDir="false" afterPath="$PROJECT_DIR$/面向对象-继承精讲/面向对象-弹出框.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-弹出框.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="315">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -155,9 +156,9 @@
         <option value="$PROJECT_DIR$/面向对象-闭包精讲/2.不调用就不会产生闭包.html" />
         <option value="$PROJECT_DIR$/面向对象-闭包精讲/2.将函数的形参作为实参传递给另一个函数使用.html" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/弹出框.html" />
-        <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-弹出框.html" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/alert.js" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-矩形.html" />
+        <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-弹出框.html" />
       </list>
     </option>
   </component>
@@ -173,8 +174,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +247,8 @@
       <workItem from="1560351114691" duration="7432000" />
       <workItem from="1560391904174" duration="10475000" />
       <workItem from="1560430230277" duration="1860000" />
-      <workItem from="1560497893511" duration="1214000" />
+      <workItem from="1560497893511" duration="1413000" />
+      <workItem from="1560694710953" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="函数属性和方法">
       <created>1545618887498</created>
@@ -455,11 +467,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560431747488</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="...">
+      <created>1560502681292</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1560502681293</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95189000" />
+    <option name="totallyTimeSpent" value="95998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -506,7 +525,8 @@
     <MESSAGE value="面向对象 - 创建对象以及优化" />
     <MESSAGE value="面向对象 - 将函数的形参作为实参传递给另一个函数调用" />
     <MESSAGE value="封装弹框" />
-    <option name="LAST_COMMIT_MESSAGE" value="封装弹框" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/函数属性和方法.html">
@@ -799,8 +819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-弹出框.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="315">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
