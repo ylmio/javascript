@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象的三种方式</title>
+</head>
+<body>
+
+
+<script>
+    //1.字面量方式（就是实例化对象）
+    let person1 = {
+        name:"小明",
+        age:15,
+        sex:"男",
+        eat:function () {
+            console.log("小明吃苹果");
+        }
+    }
+    //2.调用系统的构造函数
+    let person2 = new Object();
+    person2.name = "小强";
+    person2.age = 16;
+    person2.sex = "男";
+    person2.play = function () {
+        console.log("小强在玩lol")
+    }
+    //3.自定义构造函数
+    let person3 = function (name,age,sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.readBook = function () {
+            console.log("爱读书")
+        }
+    }
+    let p1= new person3("小花",12,"女");
+    console.log(p1);
+</script>
+</body>
+</html>
