@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数与实例对象之间的关系</title>
+</head>
+<body>
+
+<script>
+    //创建构造函数Person
+    function Person(name,age,sex){
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    //行为
+    Person.prototype.play = function () {
+        console.log("玩躲猫猫")
+    }
+
+    //实例化一个对象
+    var per = new Person("小花",5,"nv");
+
+    per.play();
+    console.log(per);
+    //检测某个构造函数是否是某个对象的原型对象
+    console.log(per.constructor==Person);
+    console.log(per instanceof Person);
+
+    console.log(per._proto_constructor == Person);
+
+</script>
+</body>
+</html>
