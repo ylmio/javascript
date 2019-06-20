@@ -1,4 +1,4 @@
-function Tools(){
+(function (w) {
     //私有的数据
     var money = 1000;
     //提供操作私有数据的函数
@@ -10,9 +10,9 @@ function Tools(){
         money--;
         console.log("还剩下"+money+"元")
     };
-    return{
-        //将数据暴露出去
+    //将数据暴露出去
+    w.Tools={
         "earn":earn,
         "send":send
     }
-}
+})(window);//实参，window
