@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见的内存泄露</title>
+</head>
+<body>
+
+<script>
+    //内存泄漏：每台计算机的内存空间是有限的，比如2G内存，4G内存，8G内存等，计算机实际使用内存超出这个范围之后就会造成内存泄漏的问题
+    //占用的内存没有及时释放
+    //内存泄漏积累多了就容易导致内存溢出
+    //常见的内存泄露
+    //1.占用内存很大的全局变量
+    var num1 = new Array(9999999);
+    var num2 = new Array(9999999);
+    var num3 = new Array(9999999);
+    var num4 = new Array(9999999);
+    var num5 = new Array(9999999);
+    var num6 = new Array(9999999);
+    var num7 = new Array(9999999);
+    var num8 = new Array(9999999);
+    var num9 = new Array(9999999);
+    //解决办法
+    //a.尽量少的使用全局变量
+    //b.使用完之后记得销毁
+    num1 = null;
+    num2 = null;
+    num3 = null;
+    num4 = null;
+    num5 = null;
+    num6 = null;
+    num7 = null;
+    num8 = null;
+    num9 = null;
+
+    //2.没有及时清理的计时器/定时器
+    setInterval(function () {
+        console.log("运行中...")
+    },1000);
+    // 只要这个程序在运行，那么它始终占据一部分内存，来执行这个程序。
+    //除非开发实际需要一直执行此程序，否则，使用完毕应该及时清理
+
+    var myTimer = setInterval(function () {
+        console.log("运行中...")
+    },1000);
+    // 让myTimer变成垃圾对象，以便程序回收
+    clearInterval(myTimer);
+    //与全局变量的销毁方式不同，下面这种清理方法是无效的，因为定时器/计时器在程序内部有特定的绑定机制，必须通过clearInterval()来清除
+    myTimer = null;
+
+    //综上，用定时器要慎重，一定要先清后设，否则在以下情况下使用时会遇到问题
+    /*
+    * a.比如你写个hover特效不先清除定时器，鼠标多移入移出几次，动画效果会一直在执行，体验不好
+    * b.可能会造成多个定时器的叠加.
+    *
+    *
+    * */
+
+    //3.闭包
+    //并不是说闭包这门技术会造成内存泄漏，而是因为使用闭包这门技术的人，因为不慎重才导致了内存泄漏
+    function fn(){
+        var num = 100;
+        function fn2(){
+            num--;
+            console.log(num);
+        }
+        return fn2;//切记，不是fn2()
+    }
+    fn();//这样便形成了闭包，但是这样的闭包没有任何的意义
+    var fnn = fn();//通过变量引用着它，这样能够调取函数里面的局部变量
+    fnn();//调用方式，此时，num一直保存在内存当中，占用着内存空间，如果不再使用，必须清除
+    fnn = null; //通过这种方法（改变指针），清除闭包
+</script>
+</body>
+</html>

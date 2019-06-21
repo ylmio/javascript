@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>简单工厂设计模式</title>
+</head>
+<body>
+
+<script>
+    // 简单工厂设计模式
+    function makeCoffee(dou,water){
+        var obj = new Object();
+        obj.dou = dou;
+        obj.water = water;
+        obj.bili = dou / water;
+        return obj;
+    }
+
+    var coffee1= new makeCoffee(1,10);
+    console.log("造出了比例为"+coffee1.bili+"的咖啡")
+
+    var coffee2= new makeCoffee(2,7);
+    console.log("造出了比例为"+coffee2.bili+"的咖啡")
+</script>
+</body>
+</html>
