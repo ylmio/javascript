@@ -41,6 +41,12 @@
 
     console.log(per.__proto__.constructor==Person.prototype.constructor);//true,说明两个原型对象的指向相同
 
+    var per2 = new Person("女",18);
+    console.log(per.sayHi()==per2.sayHi());//true,说明两个实例对象共享了一个方法，从而节省了内存空间
+    /*
+    * 综上：__proto__和prototype都是原型对象
+    * 原型的作用就是：共享数据，节省内存空间
+    * */
 </script>
 
 
