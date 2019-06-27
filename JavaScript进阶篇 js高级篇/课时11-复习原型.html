@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //构造函数
+    function Person(sex,age){
+        this.name = sex;
+        this.age = age;
+    }
+    //通过原型添加方法
+    Person.prototype.sayHi=function () {
+        console.log("打招呼，您好！")
+    }
+
+    var per = new Person("男",21);
+
+    console.dir(per);//实例对象
+
+    console.dir(Person);//构造函数
+
+    //从上图可以看到
+    //实例对象中有两个属性sex、age（这两个属性是通过构造函数来获取的）和__proto__这个属性
+    //构造函数中并没有这两个属性sex、age;但是有prototype属性
+
+    /*
+    *
+    * 实例对象中有一个属性__proto__,也是对象，叫原型，不是标准的属性，浏览器使用
+    * 构造函数中有一个属性prototype，也是对象，叫原型，是标准的属性，程序员使用
+    * */
+
+    console.log(per.__proto__==Person.prototype);//谷歌和火狐浏览器显示为true,但是在IE8浏览器中显示为false；
+
+    console.log(per.__proto__);//谷歌和火狐浏览器显示为Object,但是在IE8浏览器中显示为Undefined；
+
+    //所以说__proto__是不标准的属性，并不是所有版本的浏览器都支持，所以在开发过程中尽量使用prototype
+
+    console.log(per.__proto__.constructor==Person.prototype.constructor);//true,说明两个原型对象的指向相同
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
