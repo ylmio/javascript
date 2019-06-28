@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>  
+<script type="text/javascript">
+	//构造函数可以实例化对象
+    //构造函数中有一个属性叫prototype,是构造函数的原型对象
+    //构造函数的原型对象（prototype）中有一个constructor构造器，这个构造器指向的就是自己所在的原型对象的构造函数
+    //实例对象的原型对象（__proto__）指向的是该构造函数的原型对象
+    //构造函数的原型对象（prototype）的方法可以直接被实例对象访问
+</script>
+</body>
+</html>
