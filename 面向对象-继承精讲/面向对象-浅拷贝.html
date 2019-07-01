@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浅拷贝</title>
+</head>
+<body>
+<script type="text/html">
+    let obj = {name:"Bruce",age:20};
+    let copObj = {};
+
+    // 方法一：手动遍历属性进行拷贝
+    //遍历一个对象的键值对
+    for(let key in obj){
+        //分别动态的添加到另外一个对象上
+        copObj[key] = obj[key];
+    }
+
+    console.log(obj);//{name: "Bruce", age: 20}
+    console.log(copObj);//{name: "Bruce", age: 20}
+
+    obj.name = "Lee";
+    console.log(obj);//{name: "Lee", age: 20}
+    console.log(copObj);//{name: "Bruce", age: 20}
+
+</script>
+<script type="text/html">
+    let obj = {name:"Bruce",age:20};
+    let copObj = {};
+
+    // 方法二：通过assign(target,source_1, ..., source_n)方法
+    //它会修改target对象，然后将它返回：先将source_1对象的所有可枚举属性复制给target，然后依次复制source_1等的属性。
+    Object.assign(copObj,obj);
+
+    console.log(obj);//{name: "Bruce", age: 20}
+    console.log(copObj);//{name: "Bruce", age: 20}
+
+    obj.name = "Lee";
+    console.log(obj);//{name: "Lee", age: 20}
+    console.log(copObj);//{name: "Bruce", age: 20}
+
+</script>
+<script>
+    let obj = {name:"Bruce",age:20,arr:["apple","orange"]};
+    let copObj = {};
+
+    Object.assign(copObj,obj);
+    console.log(obj);//{name: "Bruce", age: 20}
+    console.log(copObj);//{name: "Bruce", age: 20}
+
+    obj.name = "Lee";
+    obj.arr.push("banana");
+    console.log(obj);//{name: "Bruce", age: 20, arr: Array(3)}
+    console.log(copObj);//{name: "Bruce", age: 20, arr: Array(3)}
+    //修改obj的值，copyObj中的值一起发生了改变，说明只进行了浅拷贝
+</script>
+</body>
+</html>
