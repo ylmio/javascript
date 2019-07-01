@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>深拷贝</title>
+</head>
+<body>
+<script>
+    //1.要拷贝的对象(深拷贝，修改obj中的值，copyObj中的值不会跟着改变)
+    let obj = {
+        name : "Bruce",
+        age : 25,
+        friends : ["Lee","Tom"],
+        goodF:{
+            name : "Jack",
+            age : 23,
+            address : "上海",
+            pets:[{name:"土豆"},{name:"黄瓜"}]
+        },
+        bir:new Date()
+    }
+
+    function deepCopyObj2NewObj(fromObj,toObj){
+        //在函数中先检查第一个参数是不是有值
+        //如果没有值就初始化一个空对象
+        for(let key in fromObj){
+            let fromValue = fromObj[key]
+            if(!isObject(fromValue)){
+                toObj[key] = fromValue;
+            }else {
+                //如果是引用类型的话，那就再次调用这个方法，去内部拷贝这个对象的所有属性
+                var temObj = new fromValue.constructor;
+                // debugger;
+                deepCopyObj2NewObj(fromValue,temObj);
+                toObj[key] = temObj;
+            }
+        }
+    }
+
+    //验证是否是对象
+    function isObject(obj){
+        return obj instanceof Object;
+    }
+
+    //验证是否是数组
+    function isArr(obj){
+        return Array.isArray(obj);
+    }
+
+    var newObj = {};
+    deepCopyObj2NewObj(obj,newObj);
+
+    obj.goodF.pets[0]["size"]="100px";
+
+    console.log(obj);
+    console.log(newObj);//未被添加size属性，实现了深拷贝
+
+</script>
+</body>
+</html>
