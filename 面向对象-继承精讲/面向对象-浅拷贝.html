@@ -32,7 +32,7 @@
 
     console.log(newApple);//{brand: "红富士", weight: "10g"}
 
-    //验证上面个的两种方式只实现了浅拷贝
+    //验证基本类型值得拷贝
     obj.name = "mayun";
     console.log(copyObj);//{name: "ylm", age: 30}
     console.log(obj);//{name: "mayun", age: 30}
@@ -50,7 +50,7 @@
     obj2.name = "Lee";
     console.log(obj2);//{name: "Lee", age: 20, arr: Array(2)}
     console.log(copObj2);//{name: "Bruce", age: 20, arr: Array(2)}
-
+    //验证这两种方法对于引用类型值只能实现浅拷贝
     obj2.arr.push("banana");
     console.log(obj2);//{name: "Lee", age: 20, arr: Array(3)}
     console.log(copObj2);//{name: "Bruce", age: 20, arr: Array(3)}
