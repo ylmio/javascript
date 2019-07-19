@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script type="text/html">
+    function tool(){}
+    var t1 = new tool();
+    var t2 = new tool();
+    var t3 = new tool();
+    var t4 = new tool();
+
+    console.log(t1 == t2);//false
+    console.log(t1 == t3);//false
+    console.log(t2 == t4);//false
+
+    // 说明t1 t2 t3 t4分别占用了一份独立的内存空间
+
+</script>
+<!--全局变量方法-->
+<script>
+    var instance = null;
+    function Tool(){
+        //1.判断
+        if(instance){
+            //如果instance不为空，就将instance返回
+            return instance;
+        }
+        //2.指向
+        instance = this;
+        this.name = "web 前端";
+        this.instro = "web study";
+    }
+
+    var t1 = new Tool();
+    var t2 = new Tool();
+    var t3 = new Tool();
+    console.log(t1 == t2);//true
+    console.log(t1 == t3);//true
+    console.log(t2 == t3);//true
+
+    //说明t1 t2 t3共用了一份内存空间，节省了内存
+    //可通过断点的方式查看
+</script>
+</body>
+</html>
