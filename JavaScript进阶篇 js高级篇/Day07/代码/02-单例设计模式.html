@@ -21,7 +21,7 @@
 
 </script>
 <!--全局变量方法-->
-<script>
+<script type="text/html">
     var instance = null;
     function Tool(){
         //1.判断
@@ -45,5 +45,61 @@
     //说明t1 t2 t3共用了一份内存空间，节省了内存
     //可通过断点的方式查看
 </script>
+
+<!--即时函数-->
+<script type="text/html">
+    (function(w){
+        var instance = null;
+        function Tool(){
+            //1.判断
+            if(instance){
+                //如果instance不为空，就将instance返回
+                return instance;
+            }
+            //2.指向
+            instance = this;
+            this.name = "web 前端";
+            this.instro = "web study";
+        }
+        w.Tool=Tool;
+    })(window);
+
+    var t1 = new Tool();
+    instance = {};//instance没有被修改
+    var t2 = new Tool();
+    var t3 = new Tool();
+    console.log(t1 == t2);//true
+    console.log(t1 == t3);//true
+    console.log(t2 == t3);//true
+</script>
+
+<!--惰性函数-->
+<script>
+    function Tool(){
+        var instance = this;
+        this.name = "张三";
+        this.age = 18;
+        Tool = function(){
+            return instance;
+        }
+    }
+    /*
+    var t1 = new Tool();
+    var t2 = new Tool();
+    console.log(t1 === t2);//true
+    * */
+
+    //问题
+    var t1 = new Tool();
+    Tool.prototype.run = function(){
+        console.log("跑");
+    }
+    var t2 = new Tool();
+    t1.run();//报错
+    t2.run();//报错
+
+</script>
+
+
 </body>
 </html>
