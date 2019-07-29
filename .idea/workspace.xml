@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/封装一些有用的方法/2-1.数组去重.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装一些有用的方法/2-2.数组去重.js" afterDir="false" />
+    <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="forEach filter实现封装数组去重">
+      <change afterPath="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -63,9 +62,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -82,8 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -93,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/listernFunction.html" />
         <option value="$PROJECT_DIR$/throwError.html" />
         <option value="$PROJECT_DIR$/throwError2.html" />
         <option value="$PROJECT_DIR$/原型链继承1.html" />
@@ -144,6 +155,7 @@
         <option value="$PROJECT_DIR$/封装一些有用的方法/2-1.数组去重.js" />
         <option value="$PROJECT_DIR$/封装一些有用的方法/2-2.数组去重.js" />
         <option value="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.js" />
+        <option value="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html" />
       </list>
     </option>
   </component>
@@ -287,7 +299,7 @@
       <workItem from="1563588534846" duration="5667000" />
       <workItem from="1563938417686" duration="9307000" />
       <workItem from="1563980844867" duration="463000" />
-      <workItem from="1564385152893" duration="5743000" />
+      <workItem from="1564385152893" duration="8420000" />
     </task>
     <task id="LOCAL-00001" summary="函数属性和方法">
       <created>1545618887498</created>
@@ -625,11 +637,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564388015208</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="forEach filter实现封装数组去重">
+      <created>1564391135084</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1564391135084</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161658000" />
+    <option name="totallyTimeSpent" value="164335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -658,7 +677,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="constructor" />
     <MESSAGE value="listernFunction" />
     <MESSAGE value="throwError" />
     <MESSAGE value="原型链继承" />
@@ -683,10 +701,10 @@
     <MESSAGE value="..." />
     <MESSAGE value="封装一些有用的方法" />
     <MESSAGE value="set方法实现数据去重" />
-    <option name="LAST_COMMIT_MESSAGE" value="set方法实现数据去重" />
+    <MESSAGE value="forEach filter实现封装数组去重" />
+    <option name="LAST_COMMIT_MESSAGE" value="forEach filter实现封装数组去重" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/弹出框.html" />
     <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-矩形.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1070,7 +1088,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解绑事件</title>
+    <style>
+        #confirm{
+            width: 300px;
+            height: 100px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+<button id="confirm">确认按钮</button>
+
+<script>
+    function unbindEvent(ele,type,event){
+        if(ele.removeEventListener){//非ie和非ie9
+            ele.removeEventListener(type,event,false);
+        }else if(ele.detachEvent){
+            ele.detachEvent("on"+type,event);
+        }else{
+            ele["on"+type]=null;
+        }
+    }
+
+    let confirm = document.getElementById("confirm");
+
+    confirm.onclick=function(){
+        alert("xxx");
+        unbindEvent(confirm,"onclick",function(){
+            console.log("点击事件已经被移除")
+        })
+    }
+
+
+</script>
+
+</body>
+</html>
