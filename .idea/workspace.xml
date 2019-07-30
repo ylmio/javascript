@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="forEach filter实现封装数组去重">
-      <change afterPath="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.js" afterDir="false" />
+    <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -74,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="380">
+              <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -299,14 +297,7 @@
       <workItem from="1563588534846" duration="5667000" />
       <workItem from="1563938417686" duration="9307000" />
       <workItem from="1563980844867" duration="463000" />
-      <workItem from="1564385152893" duration="8420000" />
-    </task>
-    <task id="LOCAL-00001" summary="函数属性和方法">
-      <created>1545618887498</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1545618887498</updated>
+      <workItem from="1564385152893" duration="8462000" />
     </task>
     <task id="LOCAL-00002" summary="函数属性和方法">
       <created>1545618941691</created>
@@ -644,22 +635,28 @@
       <option name="project" value="LOCAL" />
       <updated>1564391135084</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="封装解绑事件函数">
+      <created>1564394088554</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1564394088554</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164335000" />
+    <option name="totallyTimeSpent" value="164377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15664244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41737893" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41737893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -677,7 +674,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="listernFunction" />
     <MESSAGE value="throwError" />
     <MESSAGE value="原型链继承" />
     <MESSAGE value="call apply" />
@@ -702,7 +698,8 @@
     <MESSAGE value="封装一些有用的方法" />
     <MESSAGE value="set方法实现数据去重" />
     <MESSAGE value="forEach filter实现封装数组去重" />
-    <option name="LAST_COMMIT_MESSAGE" value="forEach filter实现封装数组去重" />
+    <MESSAGE value="封装解绑事件函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装解绑事件函数" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-矩形.html">
@@ -1096,8 +1093,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="380">
+          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>

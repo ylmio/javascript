@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>利用原型共享数据</title>
+</head>
+<body>
+    <script>
+        //构造函数
+        function Student(name,age,sex){
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }  
+
+        //为构造函数的原型对象添加属性和方法
+        Student.prototype.height = "188cm";
+        Student.prototype.weight = "55kg";
+        Student.prototype.eat = function(){
+            console.log("吃了10斤西瓜");
+        }
+        Student.prototype.study = function(){
+            console.log("写了500行代码");
+        }
+        //实例化对象，并初始化
+        let stu = new Student("张丹峰",20,"男");
+        console.log(stu);
+        console.log(Student);
+    </script>
+</body>
+</html>
