@@ -17,6 +17,8 @@
 
 <button id="confirm">确认按钮</button>
 
+
+
 <script>
     function unbindEvent(ele,type,event){
         if(ele.removeEventListener){//非ie和非ie9
@@ -35,8 +37,63 @@
         unbindEvent(confirm,"onclick",function(){
             console.log("点击事件已经被移除")
         })
-    }
+    };
 
+    let msg = "我是谁";
+    let em = msg.slice(0,1)+"丫"+msg.slice(1);
+    // console.log(em);
+    /*****************************************************************************************************/
+    /**
+     * 现在要根据后台返回的country来获取对应的值
+     * 比如当 country=0 的时候，country='中国'。
+     * 当country=2的时候，country='阿富汗'
+     * */
+
+    let arr = [
+        {
+            "label": 0,
+            "tw": "中國",
+            "en": "China",
+            "zh": "中国"
+        },
+        {
+            "label": 1,
+            "tw": "安哥拉",
+            "en": "Angola",
+            "zh": "安哥拉"
+        },
+        {
+            "label": 2,
+            "tw": "阿富汗",
+            "en": "Afghanistan",
+            "zh": "阿富汗"
+        }
+    ];
+
+    function getCountry(arr,code){
+        const find = arr.find(function(item){
+            if(item.label===code);
+        });
+        if(find){
+            return find.zh;
+        }
+        return null;
+    }
+    getCountry(arr,0);
+
+    const getNation = (label) => {
+        const find = arr.find(item => item.label === label);
+        console.log(find);
+        if (find) {
+            return find.zh;
+        }
+        return null;
+    };
+    // console.log(getNation(0));
+
+
+
+    /*****************************************************************************************************/
 
 </script>
 
