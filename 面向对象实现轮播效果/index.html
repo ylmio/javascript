@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+         * @Author: yhf
+         * @Date: 2018-09-12 20:43:23
+         * @Last Modified by: yhf
+         * @Last Modified time: 2018-09-12 23:23:48
+         */
+        /* 初始化页面 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 表格 */
+        table {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 800px;
+        }
+        /* 表头 */
+        th {
+            height: 50px;
+            cursor: pointer;
+        }
+        /* 表格 */
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="0"></table>
+<script>
+    /*
+ * @Author: yhf
+ * @Date: 2018-09-12 20:47:37
+ * @Last Modified by: yhf
+ * @Last Modified time: 2018-09-12 23:16:19
+ */
+
+    // 参数数组
+    let movieArray = [{
+            img: "bianxingjingang.jpg",
+            movieName: "变形金刚",
+            star: "希亚·拉伯夫",
+            direct: "迈克尔·贝",
+            type: "d动作",
+            time: "2007年07月03日"
+        },
+        {
+            img: "qiannvyouhun.jpg",
+            movieName: "倩女幽魂",
+            star: "张国荣",
+            direct: "程小东",
+            type: "j惊悚",
+            time: "1987年7月18日"
+        },
+        {
+            img: "gongfu.jpg",
+            movieName: "功夫",
+            star: "周星驰",
+            direct: "周星驰",
+            type: "x喜剧",
+            time: "2014年12月24日"
+        },
+        {
+            img: "suduyujiqing.jpg",
+            movieName: "速度与激情",
+            star: "保罗·沃克",
+            direct: "罗伯·科恩",
+            type: "d动作",
+            time: "2015年4月3日"
+        },
+        {
+            img: "dahuaxiyou.jpg",
+            movieName: "大话西游",
+            star: "周星驰",
+            direct: "刘镇伟",
+            type: "a爱情",
+            time: "2014年10月24日"
+        }
+    ];
+    // 获取元素的函数
+    function $my(date) {
+        return document.querySelector(date);
+    };
+
+    // 创建构造函数
+    function Person(date) {
+        this.table = $my(date);
+    };
+
+    // 添加原型方法 初始化
+    Person.prototype.init = function (date) {
+        // 初始化表头
+        this.initThead();
+        // 初始化表格内容
+        this.initTbody(date);
+
+        this.initPx(date)
+    };
+
+    // 添加原型方法 添加表头
+    Person.prototype.initThead = function () {
+        //先创建一个thead标签,创建tr-th,立刻加入到table中
+        var thead = document.createElement("thead");
+        // 给表头添加资料
+        thead.innerHTML = '<tr><th falg="img">影片</th><th falg="star">主演</th><th falg="direct">导演</th><th falg="type">类别</th><th falg="time">上映时间</th></tr>';
+        // 添加到表格
+        this.table.appendChild(thead);
+    };
+
+    // 添加原型方法 添加表格内容 刷新页面
+    Person.prototype.initTbody = function (date) {
+        // 刷新页面，判断有id等于tob的时候删除
+        if ($my("#tob")) {
+            this.table.removeChild($my("#tob"));
+        }
+        // 创建tbody
+        let tbody = document.createElement("tbody");
+        // 添加id
+        tbody.id = "tob";
+        // 装数据的数组
+        let arr=[];
+        for (let i = 0; i < date.length; i++) {
+            const ele = date[i];
+            // 把数组的数据拿出来添加到新的数组
+            arr.push("<tr><td><img src=images/" + ele.img + "> <br />" + ele.movieName + "</td><td>" + ele.star + "</td><td>" + ele.direct + "</td><td>" + ele.type + "</td><td>" + ele.time + "</td></tr>");
+        }
+        // 把新数组中的元素拿出来添加到tbody  join是控制连接符 “”是空，表示没有链接符
+        tbody.innerHTML = arr.join("");
+        // 把tbody添加到表格里面
+        this.table.appendChild(tbody);
+    };
+
+    // 添加原型方法 数组排序
+    Person.prototype.Szpx = function (date,attr) {
+        function fn(attr) {
+            return function (obj1,obj2) {
+                if (obj1[attr] > obj2[attr]) {
+                    return 1;
+                } else if (obj1[attr] == obj2[attr]) {
+                    return 0;
+                } else {
+                    return -1;
+                }
+            }
+        }
+        let ff = fn(attr);
+        date.sort(ff);
+    }
+
+    // 添加原型方法 获取点击元素判断排序值
+    Person.prototype.initPx = function (date) {
+        // 获取每一个表头的th
+        let ths = document.querySelectorAll("th");
+        // 定义this
+        let that = this;
+        // 循环添加点击事件
+        for (let i = 0; i < ths.length; i++) {
+            const ele = ths[i];
+            ele.onclick = function () {
+                // 获取定义值
+                let falg = this.getAttribute("falg");
+                // 调用数组排序方法
+                that.Szpx(date,falg);
+                // 调用刷新页面
+                that.initTbody(date);
+            }
+        }
+    }
+
+    // new实例对象
+    let pr = new Person("table");
+    // 调用实例的原型方法
+    pr.init(movieArray);
+</script>
+</body>
+</html>

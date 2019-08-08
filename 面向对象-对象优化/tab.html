@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <style>
+        input.active {
+            background: yellow;
+        }
+
+        #div1 div {
+            display: none;
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <input class="active" type="button" value="aaa" >
+    <input type="button" value="bbb">
+    <input type="button" value="ccc">
+    <div style="display: block;">aaa</div>
+    <div>bbb</div>
+    <div>ccc</div>
+</div>
+<script>
+    /*
+    window.onload = function() {
+        var oDiv = document.getElementById('div1');
+        var aBtn = oDiv.getElementsByTagName('input');
+        var aDiv = oDiv.getElementsByTagName('div');
+
+        for (var i = 0; i < aBtn.length; i++) {
+            aBtn[i].index = i;
+            aBtn[i].onclick = function () {
+                for (var i = 0; i <aBtn.length;i++) {
+                    aBtn[i].className='';
+                    aDiv[i].style.display='none';
+                }
+                this.className = 'active';
+                aDiv[this.index].style.display='block';
+            };
+        }
+    };
+    */
+    //面向对象改造
+
+    /*1.原则
+    * 不能有嵌套函数
+    * 但能有全局变量
+    * */
+
+    /*2.过程
+    * onload --->构造函数
+    * 全局变量 --->属性
+    * 函数 --->方法
+    * */
+
+    /*3.改错
+    * this,事件,闭包,传参
+    * */
+    window.onload = function(){
+        new TabSwitch("div1");
+    };
+    function TabSwitch(id){
+        //修改this
+        var _this = this;//_this===TabSwitch
+
+        //将变量变成属性
+        this.oDiv = document.getElementById(id);
+        this.aBtn = this.oDiv.getElementsByTagName("input");
+        this.aDiv = this.oDiv.getElementsByTagName("div");
+
+        for(let i = 0; i < this.aBtn.length; i++){
+            this.aBtn[i].index = i;
+            this.aBtn[i].onclick = function(){
+                //通过闭包,获取函数外部的_this
+                _this.fnClick(this);//此处的this指向aBtn[i],而我要调用的是TabSwitch构造函数上的方法,所以要用_this
+            };
+        }
+    };
+    //函数变构造函数prototype上的方法
+    TabSwitch.prototype.fnClick = function(oBtn){//接收传过来的aBtn[i]
+        for(let j=0; j<this.aBtn.length; j++){
+            this.aBtn[j].className="";
+            this.aDiv[j].style.display="none";
+        }
+        console.log(oBtn);
+
+        oBtn.className="active";
+        this.aDiv[oBtn.index].style.display="block";
+    }
+
+</script>
+</body>
+</html>
