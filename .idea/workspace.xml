@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/面向对象实现轮播效果/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/面向对象实现轮播效果/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/面向对象实现轮播效果/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,9 +39,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/面向对象实现轮播效果/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="148" column="14" lean-forward="true" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
+            <state relative-caret-position="322">
+              <caret line="152" column="6" lean-forward="true" selection-start-line="152" selection-start-column="6" selection-end-line="152" selection-end-column="6" />
               <folding>
+                <element signature="e#307#365#0" />
+                <element signature="e#397#515#0" />
+                <element signature="e#544#610#0" />
+                <element signature="e#639#682#0" />
                 <element signature="e#808#842#0" />
                 <element signature="n#thead#0;n#!!top" />
               </folding>
@@ -275,14 +277,7 @@
       <workItem from="1565247294151" duration="8780000" />
       <workItem from="1565274424737" duration="533000" />
       <workItem from="1565312905554" duration="650000" />
-      <workItem from="1565315047963" duration="21005000" />
-    </task>
-    <task id="LOCAL-00005" summary="constructor">
-      <created>1558452946479</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1558452946479</updated>
+      <workItem from="1565315047963" duration="21863000" />
     </task>
     <task id="LOCAL-00006" summary="constructor">
       <created>1558454843657</created>
@@ -620,11 +615,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565274863776</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary=".">
+      <created>1565342169495</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1565342169496</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207858000" />
+    <option name="totallyTimeSpent" value="208716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1054,9 +1056,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/面向对象实现轮播效果/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="148" column="14" lean-forward="true" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
+        <state relative-caret-position="322">
+          <caret line="152" column="6" lean-forward="true" selection-start-line="152" selection-start-column="6" selection-end-line="152" selection-end-column="6" />
           <folding>
+            <element signature="e#307#365#0" />
+            <element signature="e#397#515#0" />
+            <element signature="e#544#610#0" />
+            <element signature="e#639#682#0" />
             <element signature="e#808#842#0" />
             <element signature="n#thead#0;n#!!top" />
           </folding>
