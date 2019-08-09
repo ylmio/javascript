@@ -44,7 +44,8 @@
  */
 
     // 参数数组
-    let movieArray = [{
+    let movieArray = [
+        {
             img: "bianxingjingang.jpg",
             movieName: "变形金刚",
             star: "希亚·拉伯夫",
@@ -140,6 +141,9 @@
 
     // 添加原型方法 数组排序
     Person.prototype.Szpx = function (date,attr) {
+        //console.log(attr);//type 类型:影片 主演 导演 ...
+        //console.log(date);//数据 [{}]
+
         function fn(attr) {
             return function (obj1,obj2) {
                 if (obj1[attr] > obj2[attr]) {
@@ -152,11 +156,14 @@
             }
         }
         let ff = fn(attr);
+        // console.log(ff);
         date.sort(ff);
+        // console.log(date.sort(ff));
     }
 
     // 添加原型方法 获取点击元素判断排序值
     Person.prototype.initPx = function (date) {
+        console.log(date);
         // 获取每一个表头的th
         let ths = document.querySelectorAll("th");
         // 定义this
