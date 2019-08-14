@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/封装demo/分页/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/分页/page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/分页/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/分页/参考文章" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/表格/images/bianxingjingang.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/表格/images/dahuaxiyou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/表格/images/gongfu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/表格/images/qiannvyouhun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/表格/images/suduyujiqing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/表格/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/表格/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/封装demo/选项卡/tab.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/创建对象/创建对象的三种方式.html" beforeDir="false" afterPath="$PROJECT_DIR$/创建对象/创建对象的三种方式.html" afterDir="false" />
     </list>
@@ -49,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/创建对象/创建对象的三种方式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="542">
+              <caret line="103" column="61" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -312,21 +300,7 @@
       <workItem from="1565425688679" duration="17000" />
       <workItem from="1565576218976" duration="3605000" />
       <workItem from="1565688254410" duration="1228000" />
-      <workItem from="1565773094523" duration="1696000" />
-    </task>
-    <task id="LOCAL-00007" summary="constructor">
-      <created>1558456466873</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1558456466873</updated>
-    </task>
-    <task id="LOCAL-00008" summary="constructor">
-      <created>1558538863864</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1558538863865</updated>
+      <workItem from="1565773094523" duration="6850000" />
     </task>
     <task id="LOCAL-00009" summary="listernFunction">
       <created>1559133844688</created>
@@ -657,11 +631,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565344344264</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="创建对象">
+      <created>1565775385563</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1565775385564</updated>
+    </task>
+    <task id="LOCAL-00057" summary="工厂模式">
+      <created>1565791237198</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1565791237198</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215507000" />
+    <option name="totallyTimeSpent" value="220661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -691,8 +679,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cccc" />
-    <MESSAGE value="for...of" />
     <MESSAGE value="面向对象 - 计算器" />
     <MESSAGE value="面向对象 - 矩形" />
     <MESSAGE value="面向对象 - 选项卡" />
@@ -716,7 +702,9 @@
     <MESSAGE value="共享原型数据" />
     <MESSAGE value="push之前的判断" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="创建对象" />
+    <MESSAGE value="工厂模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="工厂模式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/for...of....html">
@@ -1075,8 +1063,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/创建对象/创建对象的三种方式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="542">
+          <caret line="103" column="61" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
         </state>
       </provider>
     </entry>
