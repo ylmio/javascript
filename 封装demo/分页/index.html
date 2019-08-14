@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分页</title>
+</head>
+<body>
+<div id="page-nation"></div>
+<script src="page.js"></script>
+<script>
+    //分页调用方法
+    const Api=new pageNation({
+        el:"#page-nation",//分页器位置
+        page:1,//当前页
+        size:5,//默认5,10,15,20
+        total:100,//数据总条数
+        styUrl:'page.css',//样式地址（可修改）
+        IsShowBtn: {//设置需要显示的按钮
+            choosePageSize: true,//是否显示下拉选项
+            IsShowPrevOrNextBtn: true,//是否显示上一页下一页按钮
+            IsShowEnterBtn: true,//是否显示跳转输入
+            IsShowTotalPage:true,//是否显示总页数
+        },
+        callback:function(page,size,total){
+            console.log(page,size,total);
+            //此处为ajax请求
+
+        }
+    });
+</script>
+</body>
+</html>

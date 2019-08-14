@@ -8,7 +8,7 @@
 
 
 <script>
-    //1.字面量方式（就是实例化对象）
+    //1.字面量方式
     let person1 = {
         name:"小明",
         age:15,
@@ -16,15 +16,27 @@
         eat:function () {
             console.log("小明吃苹果");
         }
-    }
+    };
+
+    let person = {
+        name : "bruce",
+        age : 20,
+        sex : "man",
+        print : function(){
+            console.log("my name is " + this.name + ",my age is " + this.age + ",I am a"+ this.sex );
+        }
+    };
+    person.print();
+
     //2.调用系统的构造函数
-    let person2 = new Object();
-    person2.name = "小强";
-    person2.age = 16;
-    person2.sex = "男";
-    person2.play = function () {
-        console.log("小强在玩lol")
-    }
+    let person2 = {};
+        person2.name = "小强";
+        person2.age = 16;
+        person2.sex = "男";
+        person2.play = function () {
+            console.log("小强在玩lol")
+        };
+
     //3.自定义构造函数
     let person3 = function (name,age,sex) {
         this.name = name;

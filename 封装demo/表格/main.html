@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象-表格</title>
+    <style>
+        /*
+         * @Author: yhf
+         * @Date: 2018-09-12 20:43:23
+         * @Last Modified by: yhf
+         * @Last Modified time: 2018-09-12 23:23:48
+         */
+        /* 初始化页面 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 表格 */
+        table {
+            width: 800px;
+            border: 1px solid;
+            margin: 50px auto;
+        }
+        /* 表头 */
+        th {
+            height: 50px;
+            cursor: pointer;
+            border: 1px solid;
+        }
+        /* 表格 */
+        td {
+            text-align: center;
+            border: 1px solid;
+
+        }
+    </style>
+</head>
+<body>
+<table id="table"></table>
+<script>
+    //后台提供的数据
+    let moiveArr = [
+        {
+            img: "bianxingjingang.jpg",
+            movieName: "变形金刚",
+            star: "希亚·拉伯夫",
+            direct: "迈克尔·贝",
+            type: "d动作",
+            time: "2007年07月03日"
+        },
+        {
+            img: "qiannvyouhun.jpg",
+            movieName: "倩女幽魂",
+            star: "张国荣",
+            direct: "程小东",
+            type: "j惊悚",
+            time: "1987年7月18日"
+        },
+        {
+            img: "gongfu.jpg",
+            movieName: "功夫",
+            star: "周星驰",
+            direct: "周星驰",
+            type: "x喜剧",
+            time: "2014年12月24日"
+        },
+        {
+            img: "suduyujiqing.jpg",
+            movieName: "速度与激情",
+            star: "保罗·沃克",
+            direct: "罗伯·科恩",
+            type: "d动作",
+            time: "2015年4月3日"
+        },
+        {
+            img: "dahuaxiyou.jpg",
+            movieName: "大话西游",
+            star: "周星驰",
+            direct: "刘镇伟",
+            type: "a爱情",
+            time: "2014年10月24日"
+        }
+    ];
+
+    //获取元素的函数
+    function getEle(ele){
+        return document.getElementById(ele);
+    };
+
+    //1.创建构造函数
+    function CreateMovieList(ele,arr){
+        this.table = getEle(ele);
+        this.arr = arr;
+    };
+
+    //2.添加原型方法 初始化
+    CreateMovieList.prototype.init = function(arr){
+        //初始化head
+        this.initThead();
+        //初始化body
+        this.initTbody(arr);
+        //拍寻
+        this.initPx(arr);
+    };
+
+    //2.1表头初始化
+    CreateMovieList.prototype.initThead = function(){
+        //2.1.1创建表头
+        var thead = document.createElement("thead");
+        thead.innerHTML = `
+            <thead>
+                <th flag="img">影片</th>
+                <th flag="star">主演</th>
+                <th flag="direct">导演</th>
+                <th flag="type">类别</th>
+                <th flag="time">上映时间</th>
+            </thead>
+        `;
+        //2.1.2将表头追加进表格
+        this.table.appendChild(thead);
+    };
+
+    //2.2表主体初始化
+    CreateMovieList.prototype.initTbody = function(arr){
+        //2.2.1创建表主体
+        var tbody = document.createElement("tbody");
+        // var moiveList = arr;
+        for(var i=0;i<arr.length;i++){
+            var moive = arr[i];
+            var moiveImg = moive.img;
+            var moiveName = moive.movieName;
+            var moiveStar = moive.star;
+            var moiveDirect = moive.direct;
+            var moiveType = moive.type;
+            var moiveTime = moive.time;
+            tbody.innerHTML += `
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="./images/${moiveImg}" alt=""/>
+                            <h5>${moiveName}</h5>
+                        </td>
+                        <td>${moiveStar}</td>
+                        <td>${moiveDirect}</td>
+                        <td>${moiveType}</td>
+                        <td>${moiveTime}</td>
+                    </tr>
+                </tbody>
+            `;
+        }
+        //2.2.2将主体追加进表格
+        this.table.appendChild(tbody);
+    };
+
+    //3.为构造函数添加原型方法
+    CreateMovieList.prototype.sortByType=function(type,arr){
+        function fn(type){
+            return function(object1,object2){
+                if(object1[type]>object2[type]){
+                    return 1;
+                }else if(object1[type]==object2[type]){
+                    return 0;
+                }else{
+                    return -1;
+                }
+            }
+        };
+        //调用 利用闭包保留数据
+        var ff = fn(type);//排序方法
+        arr.sort(ff);
+        // console.log(arr.sort(ff));
+    };
+    //4.开始排序
+    CreateMovieList.prototype.initPx = function(arr){
+        // console.log(arr);
+        var that = this;
+        var th = document.getElementsByTagName("th");
+        // console.log(that);
+        // console.log(this.arr);
+        for(var i=0;i<th.length;i++){
+            th[i].onclick = function(){
+                // 获取当前的flag img start direct type time
+                var type = this.getAttribute("flag");
+                //排序
+                console.log("排序前",arr);
+
+                that.sortByType(type,arr);
+                console.log("排序后",arr);
+                //重新渲染tbody
+                that.initTbody(arr);
+                // console.log(that.initTbody(arr));
+
+            }
+        }
+    };
+    //5.实例化构造函数
+    var newMov = new CreateMovieList("table",moiveArr);
+    newMov.init(moiveArr);
+
+</script>
+
+</body>
+</html>

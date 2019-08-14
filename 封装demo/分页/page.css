@@ -1,0 +1,65 @@
+ol.page-ol{
+    display: inline-block;
+    line-height: 2em;
+    font-size: 1em;
+}
+ol.page-ol li{
+    display: inline-block;
+    line-height: 2em;
+    font-size: 1em;
+    padding:0 .6em;
+    cursor:pointer;
+    border: 1px solid #ddd;
+    margin: 0 .5em;
+}
+ol.page-ol li:hover,ol.page-ol li.hover,.enter-btn span:hover,.prev-btn:hover,.next-btn:hover,.enter-btn span.hover,.prev-btn.hover,.next-btn.hover{
+    background: dodgerblue;
+    font-size: 1em;
+    color:#fff;
+}
+.page-Select{
+    display: inline-block;
+    height: 2em;
+    border:1px solid #ddd;
+    font-size:1em;
+}
+.prev-btn,.next-btn{
+    display: inline-block;
+    line-height: 2em;
+    font-size: 1em;
+    padding: 0 .6em;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin: 0 .5em;
+}
+.next-btn{}
+.pageMark{}
+.enter-btn input,#enter-btn span{
+    display: inline-block;
+    line-height: 2em;
+    font-size: 1em;
+    padding: 0 .6em;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    /*//width:2em;*/
+}
+.enter-btn input{
+    width:4em;
+}
+.page-nation {
+    display: flow-root;
+    text-align: center;
+    margin: 2em 0;
+}
+.disabled{
+    background: #C9C9C9!important;
+    pointer-events: none;
+    color: #fff !important;
+}
+div,ul,li,ol,table,td,th,span,strong,i,p{
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
