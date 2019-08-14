@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/创建对象/创建对象的三种方式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="103" column="61" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
+            <state relative-caret-position="614">
+              <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -300,14 +300,7 @@
       <workItem from="1565425688679" duration="17000" />
       <workItem from="1565576218976" duration="3605000" />
       <workItem from="1565688254410" duration="1228000" />
-      <workItem from="1565773094523" duration="6850000" />
-    </task>
-    <task id="LOCAL-00009" summary="listernFunction">
-      <created>1559133844688</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1559133844688</updated>
+      <workItem from="1565773094523" duration="7522000" />
     </task>
     <task id="LOCAL-00010" summary="throwError">
       <created>1559134046373</created>
@@ -645,11 +638,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565791237198</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="构造函数模式">
+      <created>1565794444602</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1565794444602</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220661000" />
+    <option name="totallyTimeSpent" value="221333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -679,7 +679,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="面向对象 - 计算器" />
     <MESSAGE value="面向对象 - 矩形" />
     <MESSAGE value="面向对象 - 选项卡" />
     <MESSAGE value="面向对象 - 选项卡2" />
@@ -704,7 +703,8 @@
     <MESSAGE value="." />
     <MESSAGE value="创建对象" />
     <MESSAGE value="工厂模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="工厂模式" />
+    <MESSAGE value="构造函数模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="构造函数模式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/for...of....html">
@@ -1063,8 +1063,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/创建对象/创建对象的三种方式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="103" column="61" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
+        <state relative-caret-position="614">
+          <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
         </state>
       </provider>
     </entry>
