@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>继承-借助构造函数</title>
+</head>
+<body>
+<script type="text/html">
+    function Parent(){
+        this.colors = ["red","green","yellow"];
+    }
+
+    function Child(){
+        Parent.call(this)
+    }
+
+    var child1 = new Child();
+    var child2 = new Child();
+    child1.colors.push("white");
+    console.log(child1.colors);//["red", "green", "yellow", "white"]
+    console.log(child2.colors);//["red", "green", "yellow"]
+    /*
+    *在新建的Child实例是调用了Parent构造函数，这样一来，就会在新创建的Child实例对象上执行Parent函数中定义的所有对象初始化代码
+    *结果，Child的每个实例就会有自己的colors属性的副本了
+    *
+    * */
+
+</script>
+
+<script type="text/html">
+    /*
+    * 传递参数
+    * 借助构造函数继承还有个优势就是可以传递参数
+    * */
+    function Parent(name){
+        this.name = name;
+    }
+    function Child(){
+        Parent.call(this,"jack");
+        this.job = "Doctor"
+    }
+
+    var child1 = new Child();
+    console.log(child1.name);
+    console.log(child1.job);
+
+    /*
+    * 问题：如果仅仅借助构造函数，方法都在构造函数内部定义，因此函数无法实现复用
+    * */
+
+</script>
+
+<script>
+    function Parent(name){
+        this.name = name;
+        this.sayName = function(){
+            console.log(this.name)
+        }
+    }
+    function Child(){
+        Parent.call(this,"jack");
+        this.job = "Doctor"
+    }
+
+    var child1 = new Child();
+    child1.sayName();
+</script>
+</body>
+</html>
