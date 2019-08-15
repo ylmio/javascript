@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/实现继承六种方法/2-借助构造函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/实现继承六种方法/3-组合继承.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/实现继承六种方法/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/实现继承六种方法/1-原型链继承.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,11 +41,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/实现继承六种方法/2-借助构造函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="362">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/实现继承六种方法/3-组合继承.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -103,15 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/封装demo/分页/参考文章">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -129,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/判断某个属性时候在对象身上还是原型身上.html" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-计算器.html" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/ceshi.html" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-选项卡.html" />
@@ -180,6 +178,7 @@
         <option value="$PROJECT_DIR$/实现继承六种方法/index.html" />
         <option value="$PROJECT_DIR$/实现继承六种方法/1-原型链继承.html" />
         <option value="$PROJECT_DIR$/实现继承六种方法/2-借助构造函数.html" />
+        <option value="$PROJECT_DIR$/实现继承六种方法/3-组合继承.html" />
       </list>
     </option>
   </component>
@@ -345,21 +344,7 @@
       <workItem from="1565576218976" duration="3605000" />
       <workItem from="1565688254410" duration="1228000" />
       <workItem from="1565773094523" duration="7551000" />
-      <workItem from="1565831723945" duration="15845000" />
-    </task>
-    <task id="LOCAL-00012" summary="原型链继承">
-      <created>1559209739163</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1559209739163</updated>
-    </task>
-    <task id="LOCAL-00013" summary="原型链继承">
-      <created>1559212198433</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1559212198433</updated>
+      <workItem from="1565831723945" duration="16656000" />
     </task>
     <task id="LOCAL-00014" summary="call apply">
       <created>1559213664030</created>
@@ -690,11 +675,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565856195862</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="原型链继承">
+      <created>1565862840759</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1565862840759</updated>
+    </task>
+    <task id="LOCAL-00062" summary="借助构造函数">
+      <created>1565862888437</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1565862888437</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237207000" />
+    <option name="totallyTimeSpent" value="238018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -724,8 +723,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="面向对象 - 选项卡2" />
-    <MESSAGE value="面向对象 - 绚丽的小球" />
     <MESSAGE value="面向对象 - 创建对象以及优化" />
     <MESSAGE value="面向对象 - 将函数的形参作为实参传递给另一个函数调用" />
     <MESSAGE value="封装弹框" />
@@ -749,19 +746,11 @@
     <MESSAGE value="构造函数模式" />
     <MESSAGE value="原型模式" />
     <MESSAGE value="创建对象方法与继承方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建对象方法与继承方法" />
+    <MESSAGE value="原型链继承" />
+    <MESSAGE value="借助构造函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="借助构造函数" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jquery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1115,8 +1104,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/实现继承六种方法/2-借助构造函数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="362">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/实现继承六种方法/3-组合继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
