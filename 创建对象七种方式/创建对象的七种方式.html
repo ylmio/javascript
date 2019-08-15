@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象的七种方式</title>
+</head>
+<body>
+
+
+<script type="text/html">
+    //1.工厂模式
+    var person = new Object();
+    person.name = "bruce";
+    person.age = 20;
+    person.job = "software engineer";
+    person.sayName = function(){
+        console.log(this.name);
+    };
+    person.sayName();
+    //等同
+    var person = {
+        name : "bruce",
+        age : 20,
+        job : "software engineer",
+        sayName : function(){
+            console.log(this.name);
+        }
+    };
+    person.sayName();
+    /*
+    *优点：创建了单个对象
+    * 缺点：使用同一个接口创建很多对象，会产生大量的重复代码。为解决这个问题，人们开始使用工厂模式的一种变体
+    * */
+
+    function createPerson(name,age,job){
+        var o = new Object();
+        o.name = name;
+        o.age = age;
+        o.job= job;
+        o.sayName = function(){
+            console.log(this.name);
+        };
+        return o;
+    }
+
+    var person1 = createPerson("bruce",20,"software engineer");
+    var person2 = createPerson("Lee",22,"Doctor");
+    console.log(person1.constructor == createPerson);//false
+    console.log(person2.constructor == createPerson);//false
+    console.log(person1.constructor);//Object
+    /*
+    *
+    *优点：能够根据接收的参数来构建一个包含所有必要信息的Person对象。可以无数次调用这个函数，每次它都会返回一个包含三个属性一个方法的对象
+    *缺点：工厂模式虽然解决了创建多个相似对象的问题，但却没有解决对象识别的问题（即怎样知道一个对象的类型）；
+    *
+    * */
+
+</script>
+
+<script type="text/html">
+    /*
+    //构造函数模式
+    function Person(name,age,job){
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName = function(){
+          console.log(this.name);
+        };
+    }
+    var person1 = new Person("bruce",20,"software engineer");
+    var person2 = new Person("Lee",22,"Doctor");
+    console.log(person1.constructor == Person);//true
+    console.log(person2.constructor == Person);//true
+    //instanceof检测对象类型更可靠
+    console.log(person1 instanceof Object);//true
+    console.log(person1 instanceof Person);//true
+    console.log(person2 instanceof Object);//true
+    console.log(person2 instanceof Person);//true
+
+    console.log(person1.constructor);//Person
+    /*
+    * 优点：解决了对象识别问题；
+    * 缺点：每个方法都要在每个实例上重新创建一遍
+    * */
+    //console.log(person1.sayName == person2.sayName);//false
+
+    //改进
+    function Person(name,age,job){
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName = sayName;
+    }
+    function sayName(){
+        console.log(this.name);
+    }
+
+    var person1 = new Person("bruce",20,"software engineer");
+    var person2 = new Person("Lee",22,"Doctor");
+    console.log(person1.sayName == person2.sayName);//true
+    /*
+    * 新问题：在全局作用域中定义的函数实际上只能被某个对象调用，这让全局作用域名不副实。
+    * 其次：若果对象需要定义很多方法，那么就要定义很多个全局函数，于是我们这个自定义的引用类型就丝毫没有封装性可言了
+    * */
+</script>
+
+<script type="text/html">
+    /*
+    * 原型模式
+    * */
+    function Person(){}
+    Person.prototype.name = "bruce";
+    Person.prototype.age = 25;
+    Person.prototype.job = "software engineer";
+    Person.sayName = function(){
+        console.log(this.name);
+    };
+    var person1 = new Person();
+    person1.name = "Lee";
+    person1.age = 30;
+    person1.job = "Doctor";
+    console.log(person1.name);
+    console.log(person1.age);
+    console.log(person1.job);
+    // person1.sayName(); 无法调用
+
+    //改进
+    function Person(){}
+    Person.prototype = {
+        name : "bruce",
+        age : 20,
+        job : "software engineer",
+        sayName : function(){
+            console.log(this.name);
+        }
+    }
+    var person2 = new Person();
+    console.log(person2.name);
+    console.log(person2.age);
+    console.log(person2.job);
+    person2.sayName();
+
+    /*
+    * 缺点：.constructor不再指向Person了，因为使用这种方式完全重写了Person.prototype对象，因此.constructor也不会存在这里了
+    * */
+    console.log(Person.prototype.constructor === Person);//false
+    //如果需要这个属性的话可以手动添加
+    function Person(){}
+    Person.prototype = {
+        constructor : Person,
+        name : "bruce",
+        age : 20,
+        job : "Doctor",
+        sayName : function(){
+            console.log(this.name);
+        }
+    }
+
+    var person3 = new Person();
+    console.log(person3.job);
+    console.log(Person.prototype.constructor === Person); //true
+
+    /*
+    * 不过这种方式还是不够好，因为constructor属性默认是不可枚举的，这样直接设置，它将变成可枚举的。
+    * 所以，可以使用Object.defineProperty方法
+    * */
+    Object.defineProperty(Person.prototype,"constructor",{
+        enumerable:false,
+        value:Person
+    });
+
+    /*
+    *带了的严重问题：
+    * 使用原型，所有的属性都将被共享，这是很大的优点，同样会带来一些缺点
+    * 原型中所有属性实例是被很多实例共享的，这种共享对于函数非常合适。对于哪些包含基本值的属性也勉强可以，毕竟实例属性可以屏蔽原型属性。但是引用类型就会出项问题了
+    *
+    * */
+    function Person(){}
+    Person.prototype = {
+        constructor : Person,
+        name : "bruce",
+        age : 20,
+        friends:["lily","tom"],
+        job : "Teacher",
+        sayName:function(){
+            console.log(this.name);
+        }
+    };
+    Object.defineProperty(Person.prototype,"constructor",{
+        enumerable:false,
+        value:Person,
+    });
+
+    var  person1 = new Person();
+    var person2 = new Person();
+    person1.friends.push("jack");
+    console.log(person1.friends);//["lily", "tom", "jack"]
+    console.log(person2.friends);//["lily", "tom", "jack"]
+
+    /*
+    *friends存在与原型中，实例person1和person2指向同一个原型，person1修改了引用的数组，也会反应到实例person2中
+    * */
+</script>
+
+<script type="text/html">
+    /*
+    * 组合使用构造函数模式和原型模式
+    * 使用最为广泛，认可度最高的创建对象的方式
+    * 优点：此模式可以让每个实例都有自己的一份属性副本，但同时又共享着对方法的引用
+    * 这样，即使实例属性修改引用类型的值，也不会影响其他实例属性的值了
+    * */
+    function Person(name,age,job){
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.friends = ["lily","tom"];
+    }
+    Person.prototype.sayFriends = function(){
+        console.log(this.friends);
+    }
+    var person1 = new Person("xiaoming",10,"student");
+    var person2 = new Person("xiaoqiang",25,"teacher");
+    console.log(person1);
+    console.log(person2);
+
+    console.log(Person.prototype.constructor === Person);//true
+    person1.friends.push("xiaohua");
+    person1.sayFriends();//["lily", "tom", "xiaohua"]
+    person2.sayFriends();//["lily", "tom"]
+
+    console.log(person1.friends == person2.friends);//false
+
+</script>
+
+<script>
+    /*
+    * 动态原型模式将所有的信息封装在构造函数中，初始化的时候，通过检测某个应该存在的方法是否有效，来决定是否需要初始化
+    *
+    * */
+    //动态原型模式
+    function Person(name,job){
+        //属性
+        this.name = name;
+        this.job = job;
+        this.friends = ["lily","tom"];
+
+        //方法
+        if(typeof this.sayName!=="function"){
+            Person.prototype.sayName = function(){
+                console.log(this.name);
+            }
+        }
+    }
+    var person1 = new Person("jack","doctor");
+    var person2 = new Person("bruce","doctor");
+    console.log(person1);
+    person1.sayName();
+    console.log(Person.prototype.constructor === Person);//true
+    person1.friends.push("zhuli");
+    console.log(person1.friends);//["lily", "tom", "zhuli"]
+    console.log(person2.friends);//["lily", "tom"]
+
+</script>
+
+</body>
+</html>
