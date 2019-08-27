@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Array/3.栈方法.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/遮罩层/1.mask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/遮罩层/2.mask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/遮罩层/3.mask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/遮罩层/4.mask.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/遮罩层/addEventListener.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,94 +21,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/创建对象七种方式/创建对象的七种方式.html">
+        <entry file="file://$PROJECT_DIR$/遮罩层/1.mask.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="233" column="9" lean-forward="true" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="9" />
-              <folding>
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="398">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/callapply.html">
+        <entry file="file://$PROJECT_DIR$/遮罩层/2.mask.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-250" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/执行环境和作用域.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="72">
-                <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
+            <state relative-caret-position="-304">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/继承3.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/防止用户重复提交.html">
+        <entry file="file://$PROJECT_DIR$/遮罩层/3.mask.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/1-数组检测.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="362">
+              <caret line="88" column="70" lean-forward="true" selection-start-line="88" selection-start-column="70" selection-end-line="88" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Array/2-转换方法.js">
+        <entry file="file://$PROJECT_DIR$/遮罩层/addEventListener.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="234">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Array/3.栈方法.js">
+        <entry file="file://$PROJECT_DIR$/遮罩层/4.mask.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+            <state relative-caret-position="329">
+              <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/创建对象七种方式/组合使用构造函数模式与原型模式.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -115,11 +75,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="AMD JavaScript File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>modal-open</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,12 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/面向对象-继承精讲/Ball.js" />
-        <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-绚丽小球.html" />
-        <option value="$PROJECT_DIR$/面向对象-对象优化/面向对象-对象优化.html" />
-        <option value="$PROJECT_DIR$/面向对象-闭包精讲/1.什么是闭包.html" />
-        <option value="$PROJECT_DIR$/面向对象-闭包精讲/2.不调用就不会产生闭包.html" />
-        <option value="$PROJECT_DIR$/面向对象-闭包精讲/2.将函数的形参作为实参传递给另一个函数使用.html" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/弹出框.html" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/alert.js" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-矩形.html" />
@@ -178,6 +137,12 @@
         <option value="$PROJECT_DIR$/Array/1-数组检测.js" />
         <option value="$PROJECT_DIR$/Array/2-转换方法.js" />
         <option value="$PROJECT_DIR$/Array/3.栈方法.js" />
+        <option value="$PROJECT_DIR$/遮罩层/addEventListener.html" />
+        <option value="$PROJECT_DIR$/遮罩层/2.mask.html" />
+        <option value="$PROJECT_DIR$/遮罩层/1.mask.html" />
+        <option value="$PROJECT_DIR$/遮罩层/address.json" />
+        <option value="$PROJECT_DIR$/遮罩层/3.mask.html" />
+        <option value="$PROJECT_DIR$/遮罩层/4.mask.html" />
       </list>
     </option>
   </component>
@@ -203,7 +168,7 @@
             <path>
               <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="Array" type="462c0819:PsiDirectoryNode" />
+              <item name="遮罩层" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,14 +182,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/封装demo/选项卡" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/遮罩层" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\javascript" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\javascript\遮罩层" />
       <recent name="D:\GitHub\javascript\封装demo\选项卡" />
       <recent name="D:\GitHub\javascript\封装demo\表格" />
       <recent name="D:\GitHub\javascript\面向对象-闭包精讲" />
@@ -340,13 +309,7 @@
       <workItem from="1565773094523" duration="7551000" />
       <workItem from="1565831723945" duration="16689000" />
       <workItem from="1565918227934" duration="5608000" />
-    </task>
-    <task id="LOCAL-00018" summary="cccc">
-      <created>1559285468604</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1559285468604</updated>
+      <workItem from="1566883192897" duration="10532000" />
     </task>
     <task id="LOCAL-00019" summary="cccc">
       <created>1559289077977</created>
@@ -684,17 +647,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565921378031</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="栈方法">
+      <created>1566883227735</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1566883227736</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243659000" />
+    <option name="totallyTimeSpent" value="254191000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20026438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19431593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -718,7 +688,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="创建对象的三种方式" />
     <MESSAGE value="闭包实例" />
     <MESSAGE value="小闭包" />
     <MESSAGE value="设计模式" />
@@ -743,55 +712,10 @@
     <MESSAGE value="组合使用构造函数模式与原型模式" />
     <MESSAGE value="数组检测方法" />
     <MESSAGE value="转换方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="转换方法" />
+    <MESSAGE value="栈方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="栈方法" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/qrcode.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript进阶篇 js高级篇/课时13-共享原型数据">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkID.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1602">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isMobile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/throwError2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/构造函数与实例对象之间的关系">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -1036,17 +960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/创建对象七种方式/组合使用构造函数模式与原型模式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/创建对象七种方式/创建对象的七种方式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="233" column="9" lean-forward="true" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="9" />
+        <state relative-caret-position="774">
+          <caret line="233" column="9" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="9" />
           <folding>
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
@@ -1057,14 +974,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/callapply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/执行环境和作用域.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="72">
+          <first_editor relative-caret-position="216">
             <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           </first_editor>
           <second_editor>
@@ -1077,13 +992,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/防止用户重复提交.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Array/1-数组检测.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="180">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1093,7 +1006,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Array/2-转换方法.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="90">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1101,12 +1014,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/创建对象七种方式/组合使用构造函数模式与原型模式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Array/3.栈方法.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="216">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/遮罩层/1.mask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/遮罩层/address.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/遮罩层/addEventListener.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/遮罩层/2.mask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/遮罩层/3.mask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="88" column="70" lean-forward="true" selection-start-line="88" selection-start-column="70" selection-end-line="88" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/遮罩层/4.mask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
