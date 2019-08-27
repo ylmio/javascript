@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Array/1-数组检测.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array/3.栈方法.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,11 +64,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Array/1-数组检测.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="270">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/2-转换方法.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Array/3.栈方法.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,6 +116,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="AMD JavaScript File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -99,8 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-选项卡2.html" />
-        <option value="$PROJECT_DIR$/面向对象-继承精讲/Tab.js" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/Ball.js" />
         <option value="$PROJECT_DIR$/面向对象-继承精讲/面向对象-绚丽小球.html" />
         <option value="$PROJECT_DIR$/面向对象-对象优化/面向对象-对象优化.html" />
@@ -150,6 +176,8 @@
         <option value="$PROJECT_DIR$/创建对象七种方式/借助构造函数与原型.html" />
         <option value="$PROJECT_DIR$/创建对象七种方式/组合使用构造函数模式与原型模式.html" />
         <option value="$PROJECT_DIR$/Array/1-数组检测.js" />
+        <option value="$PROJECT_DIR$/Array/2-转换方法.js" />
+        <option value="$PROJECT_DIR$/Array/3.栈方法.js" />
       </list>
     </option>
   </component>
@@ -215,14 +243,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.faceToObject.js">
-    <configuration name="2-1.数组去重.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="2-1.数组去重.js" working-dir="$PROJECT_DIR$/封装一些有用的方法">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Node.js.3.栈方法.js">
     <configuration name="2-2.数组去重.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="2-2.数组去重.js" working-dir="$PROJECT_DIR$/封装一些有用的方法">
       <method v="2" />
     </configuration>
-    <configuration name="2.数组去重.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="2.数组去重.js" working-dir="$PROJECT_DIR$/封装一些有用的方法">
+    <configuration name="2-转换方法.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="2-转换方法.js" working-dir="$PROJECT_DIR$/Array">
+      <method v="2" />
+    </configuration>
+    <configuration name="3.栈方法.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="3.栈方法.js" working-dir="$PROJECT_DIR$/Array">
       <method v="2" />
     </configuration>
     <configuration name="faceToObject.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="faceToObject.js" working-dir="$PROJECT_DIR$/面向对象-对象优化">
@@ -233,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.3.栈方法.js" />
+        <item itemvalue="Node.js.2-转换方法.js" />
         <item itemvalue="Node.js.faceToObject.js" />
         <item itemvalue="Node.js.push.js" />
         <item itemvalue="Node.js.2-2.数组去重.js" />
-        <item itemvalue="Node.js.2-1.数组去重.js" />
-        <item itemvalue="Node.js.2.数组去重.js" />
       </list>
     </recent_temporary>
   </component>
@@ -311,21 +339,7 @@
       <workItem from="1565688254410" duration="1228000" />
       <workItem from="1565773094523" duration="7551000" />
       <workItem from="1565831723945" duration="16689000" />
-      <workItem from="1565918227934" duration="2133000" />
-    </task>
-    <task id="LOCAL-00016" summary="call apply">
-      <created>1559283513887</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1559283513887</updated>
-    </task>
-    <task id="LOCAL-00017" summary="call apply">
-      <created>1559284385260</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1559284385260</updated>
+      <workItem from="1565918227934" duration="5608000" />
     </task>
     <task id="LOCAL-00018" summary="cccc">
       <created>1559285468604</created>
@@ -656,14 +670,28 @@
       <option name="project" value="LOCAL" />
       <updated>1565919153351</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="数组检测方法">
+      <created>1565920418393</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1565920418393</updated>
+    </task>
+    <task id="LOCAL-00066" summary="转换方法">
+      <created>1565921378031</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1565921378031</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240184000" />
+    <option name="totallyTimeSpent" value="243659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20026438" />
@@ -671,14 +699,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.04360465" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4017094" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33760685" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33760685" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -690,8 +718,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="封装弹框" />
-    <MESSAGE value="。。。" />
     <MESSAGE value="创建对象的三种方式" />
     <MESSAGE value="闭包实例" />
     <MESSAGE value="小闭包" />
@@ -715,23 +741,11 @@
     <MESSAGE value="借助构造函数" />
     <MESSAGE value="组合继承" />
     <MESSAGE value="组合使用构造函数模式与原型模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="组合使用构造函数模式与原型模式" />
+    <MESSAGE value="数组检测方法" />
+    <MESSAGE value="转换方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="转换方法" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trycatch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/throttle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qrcode.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1069,8 +1083,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Array/1-数组检测.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/2-转换方法.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/3.栈方法.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
