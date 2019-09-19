@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let args = [
+        {title:"the rank of football games",sex:"male",age:20},
+    ];
+    let r = args.map(item=>{
+        return{
+            user_title:item.title,
+            user_sex:item.sex,
+            user_age:item.age,
+        }
+    });
+    console.log(r);//{user_title: "the rank of football games", user_sex: "male", user_age: 20}
+
+    let numbs = [1,2,3,4,5];
+    let newnumbs = numbs.map(function(item){
+        if(item===2){
+            return item*2
+        };
+        // return item;
+    });
+    console.log(newnumbs);//[undefined, 4, undefined, undefined, undefined]
+    /*
+    * 为什么会出现三个undefined呢？而不是我预期的[1,4,3,4,5]
+    *只所以会出现三个undefined是因为map()方法创建了一个新数组，
+    *但新数组并不是在遍历完numbs之后才才被赋值
+    * 而是每遍历一次，就得到一个值，
+    * 所以加上return item就对了
+    * */
+    /*******************************************************************************************************/
+    let arrNum = [1,2,3,4,5,6,7,8];
+    let newArrNum = arrNum.map(function(currentValue,index,arr){
+        return currentValue*2 + "的index是" + index + "属于数组" + arr;
+    });
+    console.log(newArrNum);
+</script>
+</body>
+</html>
