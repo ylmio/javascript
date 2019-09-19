@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Array/7.map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Array/8.indexOf.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,11 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Array/7.map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+            <state relative-caret-position="180">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Array/8.indexOf.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -69,7 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/构造函数与实例对象之间的关系" />
         <option value="$PROJECT_DIR$/构造函数与实例对象之间的关系.html" />
         <option value="$PROJECT_DIR$/面向对象-闭包精讲/3.闭包实例.html" />
         <option value="$PROJECT_DIR$/面向对象-闭包精讲/Tools.js" />
@@ -120,6 +128,7 @@
         <option value="$PROJECT_DIR$/Array/5.push().js" />
         <option value="$PROJECT_DIR$/Array/6.pop.html" />
         <option value="$PROJECT_DIR$/Array/7.map.html" />
+        <option value="$PROJECT_DIR$/Array/8.indexOf.html" />
       </list>
     </option>
   </component>
@@ -296,14 +305,7 @@
       <workItem from="1566955849803" duration="380000" />
       <workItem from="1567435651984" duration="1037000" />
       <workItem from="1567473623985" duration="1784000" />
-      <workItem from="1568856263508" duration="6698000" />
-    </task>
-    <task id="LOCAL-00024" summary="面向对象 - 矩形">
-      <created>1560230813251</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1560230813251</updated>
+      <workItem from="1568856263508" duration="9936000" />
     </task>
     <task id="LOCAL-00025" summary="面向对象 - 矩形">
       <created>1560232778611</created>
@@ -641,11 +643,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568859902885</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="map">
+      <created>1568872505499</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1568872505499</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269857000" />
+    <option name="totallyTimeSpent" value="273095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -675,7 +684,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="..." />
     <MESSAGE value="封装一些有用的方法" />
     <MESSAGE value="set方法实现数据去重" />
     <MESSAGE value="forEach filter实现封装数组去重" />
@@ -700,16 +708,10 @@
     <MESSAGE value="fill()" />
     <MESSAGE value="push" />
     <MESSAGE value="pop" />
-    <option name="LAST_COMMIT_MESSAGE" value="pop" />
+    <MESSAGE value="map" />
+    <option name="LAST_COMMIT_MESSAGE" value="map" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/封装一些有用的方法/01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/封装一些有用的方法/2.数组去重.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -1050,8 +1052,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Array/7.map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+        <state relative-caret-position="180">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/8.indexOf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
