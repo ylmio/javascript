@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Array/10.every.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/10.every.html" beforeDir="false" afterPath="$PROJECT_DIR$/Array/10.every.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/Array/8.indexOf.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -63,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Array/10.every.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="306">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -161,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,6 +183,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,14 +324,8 @@
       <workItem from="1567435651984" duration="1037000" />
       <workItem from="1567473623985" duration="1784000" />
       <workItem from="1568856263508" duration="9996000" />
-      <workItem from="1568902109696" duration="1544000" />
-    </task>
-    <task id="LOCAL-00027" summary="面向对象 - 选项卡2">
-      <created>1560262159588</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1560262159588</updated>
+      <workItem from="1568902109696" duration="2199000" />
+      <workItem from="1568941474505" duration="2111000" />
     </task>
     <task id="LOCAL-00028" summary="面向对象 - 绚丽的小球">
       <created>1560265302078</created>
@@ -668,11 +663,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568902916556</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="every">
+      <created>1568903949498</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1568903949498</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274699000" />
+    <option name="totallyTimeSpent" value="277465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -702,7 +704,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="forEach filter实现封装数组去重" />
     <MESSAGE value="封装解绑事件函数" />
     <MESSAGE value="共享原型数据" />
     <MESSAGE value="push之前的判断" />
@@ -727,7 +728,8 @@
     <MESSAGE value="map" />
     <MESSAGE value="indexOf" />
     <MESSAGE value="findIndex" />
-    <option name="LAST_COMMIT_MESSAGE" value="findIndex" />
+    <MESSAGE value="every" />
+    <option name="LAST_COMMIT_MESSAGE" value="every" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/面向对象-对象优化/faceToObject.js">
@@ -1064,7 +1066,7 @@
     <entry file="file://$PROJECT_DIR$/Array/8.indexOf.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1077,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Array/10.every.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="306">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
         </state>
       </provider>
     </entry>
