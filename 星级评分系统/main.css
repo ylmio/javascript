@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 14px;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrap{
+    display: flex;
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid orangered;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#wrap>.stars{
+    margin-left: 20px;
+}
+
+.stars>ul>li{
+    float: left;
+    margin: 0 10px;
+}
+
+.stars>ul>li>a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    background: url(images/star.png);
+}
+.point>b{
+    color: red;
+}

@@ -80,7 +80,7 @@
                 _this.fnClick(this);//此处的this指向aBtn[i],而我要调用的是TabSwitch构造函数上的方法,所以要用_this
             };
         }
-    };
+    }
     //函数变构造函数prototype上的方法
     TabSwitch.prototype.fnClick = function(oBtn){//接收传过来的aBtn[i]
         for(let j=0; j<this.aBtn.length; j++){
