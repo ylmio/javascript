@@ -6,4 +6,22 @@ window.onload=function(){
         {msg:"中等"},
         {msg:"优秀"},
     ];
+    let lis = document.getElementsByTagName("li");
+    for(let i=0;i<lis.length;i++){
+        lis[i].index = i;
+        lis[i].onmouseover=function () {
+            console.log(this.index);
+            if(this.index===0){
+                document.getElementById("script").innerText=scriptMsg[0].msg;
+            }else if(this.index===1){
+                document.getElementById("script").innerText=scriptMsg[1].msg;
+            }else if(this.index===2){
+                document.getElementById("script").innerText=scriptMsg[2].msg;
+            }else if(this.index===3){
+                document.getElementById("script").innerText=scriptMsg[3].msg;
+            }else if(this.index===4){
+                document.getElementById("script").innerText=scriptMsg[4].msg;
+            }
+        }
+    }
 };

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="...">
-      <change afterPath="$PROJECT_DIR$/星级评分系统/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/javascript/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装demo/选项卡/tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/封装demo/选项卡/tab.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/星级评分系统/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/星级评分系统/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/星级评分系统/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/星级评分系统/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,21 +16,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/星级评分系统/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="414">
+              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/星级评分系统/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/封装demo/表格/index.html">
+        <entry file="file://$PROJECT_DIR$/星级评分系统/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="171" column="40" selection-start-line="171" selection-start-column="40" selection-end-line="171" selection-end-column="40" />
+            <state relative-caret-position="182">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -113,10 +117,10 @@
         <option value="$PROJECT_DIR$/Array/8.indexOf.html" />
         <option value="$PROJECT_DIR$/Array/9.findIndex.html" />
         <option value="$PROJECT_DIR$/Array/10.every.html" />
-        <option value="$PROJECT_DIR$/星级评分系统/main.css" />
-        <option value="$PROJECT_DIR$/星级评分系统/main.js" />
-        <option value="$PROJECT_DIR$/星级评分系统/index.html" />
         <option value="$PROJECT_DIR$/封装demo/选项卡/tab.html" />
+        <option value="$PROJECT_DIR$/星级评分系统/main.css" />
+        <option value="$PROJECT_DIR$/星级评分系统/index.html" />
+        <option value="$PROJECT_DIR$/星级评分系统/main.js" />
       </list>
     </option>
   </component>
@@ -142,6 +146,11 @@
             </path>
             <path>
               <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="星级评分系统" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -160,21 +169,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../best-city" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/星级评分系统/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\javascript" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\javascript\星级评分系统\images" />
       <recent name="D:\GitHub\javascript\遮罩层" />
       <recent name="D:\GitHub\javascript\封装demo\选项卡" />
       <recent name="D:\GitHub\javascript\封装demo\表格" />
       <recent name="D:\GitHub\javascript\面向对象-闭包精讲" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\javascript" />
     </key>
   </component>
@@ -299,28 +308,8 @@
       <workItem from="1569460230160" duration="769000" />
       <workItem from="1569679848090" duration="1314000" />
       <workItem from="1569724341609" duration="1965000" />
-      <workItem from="1571043107480" duration="810000" />
-    </task>
-    <task id="LOCAL-00032" summary="...">
-      <created>1560502681292</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1560502681293</updated>
-    </task>
-    <task id="LOCAL-00033" summary="。。。">
-      <created>1560696598253</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1560696598253</updated>
-    </task>
-    <task id="LOCAL-00034" summary="创建对象的三种方式">
-      <created>1560782958508</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1560782958508</updated>
+      <workItem from="1571043107480" duration="3921000" />
+      <workItem from="1571149570779" duration="2078000" />
     </task>
     <task id="LOCAL-00035" summary="创建对象的三种方式">
       <created>1560873179226</created>
@@ -644,11 +633,32 @@
       <option name="project" value="LOCAL" />
       <updated>1571043433676</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="删除无用的文件信息">
+      <created>1571043955802</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1571043955802</updated>
+    </task>
+    <task id="LOCAL-00082" summary="style">
+      <created>1571046997964</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1571046997964</updated>
+    </task>
+    <task id="LOCAL-00083" summary="修改样式，添加描述文字">
+      <created>1571150503892</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1571150503893</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282431000" />
+    <option name="totallyTimeSpent" value="287620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -678,9 +688,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="push之前的判断" />
-    <MESSAGE value="." />
-    <MESSAGE value="创建对象" />
     <MESSAGE value="工厂模式" />
     <MESSAGE value="构造函数模式" />
     <MESSAGE value="原型模式" />
@@ -703,7 +710,10 @@
     <MESSAGE value="every" />
     <MESSAGE value="..." />
     <MESSAGE value="创建星级评分系统案例" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建星级评分系统案例" />
+    <MESSAGE value="删除无用的文件信息" />
+    <MESSAGE value="style" />
+    <MESSAGE value="修改样式，添加描述文字" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改样式，添加描述文字" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Temp/dahuaxiyou.jpg" />
@@ -993,12 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/星级评分系统/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/星级评分系统/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/继承3.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1031,15 +1035,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/封装demo/表格/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="632">
           <caret line="171" column="40" selection-start-line="171" selection-start-column="40" selection-end-line="171" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/星级评分系统/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/星级评分系统/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="414">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/星级评分系统/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>
