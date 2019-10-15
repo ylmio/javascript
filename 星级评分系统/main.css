@@ -21,7 +21,7 @@ a{
     height: 50px;
     line-height: 50px;
     border: 1px solid orangered;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0 10px;
 }
 
@@ -31,7 +31,7 @@ a{
 
 .stars>ul>li{
     float: left;
-    margin: 0 10px;
+    margin: 15px 10px;
 }
 
 .stars>ul>li>a{
