@@ -6,6 +6,7 @@ window.onload=function(){
         {msg:"中等"},
         {msg:"优秀"},
     ];
+// 注释
     let lis = document.getElementsByTagName("li");
     for(let i=0;i<lis.length;i++){
         lis[i].index = i;
