@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="">
+    <list default="true" id="73c4303e-2da7-459a-b082-61d22e06f134" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Ajax封装/1.ES6标准下的ajax封装.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ajax封装/2.普通Ajax封装.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/星级评分系统/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/星级评分系统/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,30 +16,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/星级评分系统/index.html">
+        <entry file="file://$PROJECT_DIR$/Ajax封装/1.ES6标准下的ajax封装.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/星级评分系统/main.js">
+        <entry file="file://$PROJECT_DIR$/Ajax封装/2.普通Ajax封装.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/星级评分系统/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state>
+              <caret column="66" selection-start-column="66" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -48,20 +40,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AMD JavaScript File" />
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="AMD JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>bodyCls</find>
-      <find>modal</find>
-      <find>modal-open</find>
-      <find>page</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,57 +51,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/设计模式/1.简单工厂设计模式.html" />
-        <option value="$PROJECT_DIR$/JavaScript进阶篇 js高级篇/课时11-复习原型.html" />
-        <option value="$PROJECT_DIR$/trycatch.html" />
-        <option value="$PROJECT_DIR$/checkID.js" />
-        <option value="$PROJECT_DIR$/checkPhone.js" />
-        <option value="$PROJECT_DIR$/isMobile.js" />
-        <option value="$PROJECT_DIR$/JavaScript进阶篇 js高级篇/Day07/代码/02-单例设计模式.html" />
-        <option value="$PROJECT_DIR$/封装一些有用的方法/1.输入一个值，返回其数据类型.html" />
-        <option value="$PROJECT_DIR$/封装一些有用的方法/01.js" />
-        <option value="$PROJECT_DIR$/封装一些有用的方法/2.数组去重.js" />
-        <option value="$PROJECT_DIR$/封装一些有用的方法/2-1.数组去重.js" />
-        <option value="$PROJECT_DIR$/封装一些有用的方法/2-2.数组去重.js" />
-        <option value="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.js" />
-        <option value="$PROJECT_DIR$/封装一些有用的方法/3.解绑事件.html" />
-        <option value="$PROJECT_DIR$/push.js" />
-        <option value="$PROJECT_DIR$/面向对象-对象优化/faceToObject.js" />
-        <option value="$PROJECT_DIR$/面向对象-对象优化/tab.html" />
-        <option value="$PROJECT_DIR$/面向对象实现轮播效果/main.js" />
-        <option value="$PROJECT_DIR$/面向对象实现轮播效果/index.html" />
-        <option value="$PROJECT_DIR$/面向对象实现轮播效果/main.html" />
-        <option value="$PROJECT_DIR$/封装demo/分页/参考文章" />
-        <option value="$PROJECT_DIR$/封装demo/分页/page.js" />
-        <option value="$PROJECT_DIR$/封装demo/分页/page.css" />
-        <option value="$PROJECT_DIR$/封装demo/分页/index.html" />
-        <option value="$PROJECT_DIR$/创建对象/创建对象的三种方式.html" />
-        <option value="$PROJECT_DIR$/实现继承六种方法/index.html" />
-        <option value="$PROJECT_DIR$/实现继承六种方法/1-原型链继承.html" />
-        <option value="$PROJECT_DIR$/实现继承六种方法/2-借助构造函数.html" />
-        <option value="$PROJECT_DIR$/实现继承六种方法/3-组合继承.html" />
-        <option value="$PROJECT_DIR$/创建对象七种方式/借助构造函数与原型.html" />
-        <option value="$PROJECT_DIR$/创建对象七种方式/组合使用构造函数模式与原型模式.html" />
-        <option value="$PROJECT_DIR$/Array/1-数组检测.js" />
-        <option value="$PROJECT_DIR$/Array/2-转换方法.js" />
-        <option value="$PROJECT_DIR$/Array/3.栈方法.js" />
-        <option value="$PROJECT_DIR$/遮罩层/addEventListener.html" />
-        <option value="$PROJECT_DIR$/遮罩层/2.mask.html" />
-        <option value="$PROJECT_DIR$/遮罩层/1.mask.html" />
-        <option value="$PROJECT_DIR$/遮罩层/address.json" />
-        <option value="$PROJECT_DIR$/遮罩层/3.mask.html" />
-        <option value="$PROJECT_DIR$/遮罩层/4.mask.html" />
-        <option value="$PROJECT_DIR$/Array/4.fill().js" />
-        <option value="$PROJECT_DIR$/Array/5.push().js" />
-        <option value="$PROJECT_DIR$/Array/6.pop.html" />
-        <option value="$PROJECT_DIR$/Array/7.map.html" />
-        <option value="$PROJECT_DIR$/Array/8.indexOf.html" />
-        <option value="$PROJECT_DIR$/Array/9.findIndex.html" />
-        <option value="$PROJECT_DIR$/Array/10.every.html" />
-        <option value="$PROJECT_DIR$/封装demo/选项卡/tab.html" />
-        <option value="$PROJECT_DIR$/星级评分系统/main.css" />
-        <option value="$PROJECT_DIR$/星级评分系统/index.html" />
-        <option value="$PROJECT_DIR$/星级评分系统/main.js" />
+        <option value="$PROJECT_DIR$/完美继承.html" />
+        <option value="$PROJECT_DIR$/Ajax封装/1.ES6标准下的ajax封装.js" />
+        <option value="$PROJECT_DIR$/Ajax封装/2.普通Ajax封装.js" />
       </list>
     </option>
   </component>
@@ -135,12 +69,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="Ajax封装" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
@@ -155,31 +95,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/星级评分系统/images" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\javascript\星级评分系统\images" />
-      <recent name="D:\GitHub\javascript\遮罩层" />
-      <recent name="D:\GitHub\javascript\封装demo\选项卡" />
-      <recent name="D:\GitHub\javascript\封装demo\表格" />
-      <recent name="D:\GitHub\javascript\面向对象-闭包精讲" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\javascript" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -193,468 +114,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.4.fill().js">
-    <configuration name="2-转换方法.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="2-转换方法.js" working-dir="$PROJECT_DIR$/Array">
-      <method v="2" />
-    </configuration>
-    <configuration name="3.栈方法.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="3.栈方法.js" working-dir="$PROJECT_DIR$/Array">
-      <method v="2" />
-    </configuration>
-    <configuration name="4.fill().js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="4.fill().js" working-dir="$PROJECT_DIR$/Array">
-      <method v="2" />
-    </configuration>
-    <configuration name="faceToObject.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="faceToObject.js" working-dir="$PROJECT_DIR$/面向对象-对象优化">
-      <method v="2" />
-    </configuration>
-    <configuration name="push.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="push.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.4.fill().js" />
-        <item itemvalue="Node.js.3.栈方法.js" />
-        <item itemvalue="Node.js.2-转换方法.js" />
-        <item itemvalue="Node.js.faceToObject.js" />
-        <item itemvalue="Node.js.push.js" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary=".">
+      <created>1571641400653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571641400653</updated>
+    </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fcecb867-722e-41d4-b299-fa83bba882a2" name="Default Changelist" comment="" />
-      <created>1545618841719</created>
+      <changelist id="73c4303e-2da7-459a-b082-61d22e06f134" name="Default Changelist" comment="" />
+      <created>1571994440191</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1545618841719</updated>
-      <workItem from="1545618847898" duration="709000" />
-      <workItem from="1553061295173" duration="3337000" />
-      <workItem from="1553264749054" duration="601000" />
-      <workItem from="1553332340501" duration="142000" />
-      <workItem from="1558452228858" duration="4246000" />
-      <workItem from="1558495659390" duration="3085000" />
-      <workItem from="1559036257142" duration="1339000" />
-      <workItem from="1559133820738" duration="9654000" />
-      <workItem from="1559212427259" duration="1598000" />
-      <workItem from="1559228698620" duration="1838000" />
-      <workItem from="1559282033399" duration="13970000" />
-      <workItem from="1559527195482" duration="2046000" />
-      <workItem from="1559625819278" duration="2568000" />
-      <workItem from="1560158753079" duration="599000" />
-      <workItem from="1560178937478" duration="2841000" />
-      <workItem from="1560215887478" duration="16715000" />
-      <workItem from="1560259944565" duration="3916000" />
-      <workItem from="1560302282501" duration="3054000" />
-      <workItem from="1560341572218" duration="1338000" />
-      <workItem from="1560343173287" duration="612000" />
-      <workItem from="1560351114691" duration="7432000" />
-      <workItem from="1560391904174" duration="10475000" />
-      <workItem from="1560430230277" duration="1860000" />
-      <workItem from="1560497893511" duration="1413000" />
-      <workItem from="1560694710953" duration="668000" />
-      <workItem from="1560738178047" duration="34000" />
-      <workItem from="1560781986241" duration="2296000" />
-      <workItem from="1560842421901" duration="49000" />
-      <workItem from="1560866672973" duration="1818000" />
-      <workItem from="1560871117552" duration="1342000" />
-      <workItem from="1560906504562" duration="1204000" />
-      <workItem from="1561045744841" duration="2339000" />
-      <workItem from="1561093209453" duration="6447000" />
-      <workItem from="1561170557747" duration="1207000" />
-      <workItem from="1561647566150" duration="1742000" />
-      <workItem from="1561649377576" duration="633000" />
-      <workItem from="1561944197421" duration="1673000" />
-      <workItem from="1561967825072" duration="97000" />
-      <workItem from="1561969489932" duration="599000" />
-      <workItem from="1561971214261" duration="3000" />
-      <workItem from="1561971231545" duration="6000" />
-      <workItem from="1561971251667" duration="3551000" />
-      <workItem from="1563332214615" duration="16632000" />
-      <workItem from="1563544366801" duration="2750000" />
-      <workItem from="1563588534846" duration="5667000" />
-      <workItem from="1563938417686" duration="9307000" />
-      <workItem from="1563980844867" duration="463000" />
-      <workItem from="1564385152893" duration="8462000" />
-      <workItem from="1564449441465" duration="1625000" />
-      <workItem from="1565140427085" duration="6182000" />
-      <workItem from="1565227497434" duration="4706000" />
-      <workItem from="1565247294151" duration="8780000" />
-      <workItem from="1565274424737" duration="533000" />
-      <workItem from="1565312905554" duration="650000" />
-      <workItem from="1565315047963" duration="22108000" />
-      <workItem from="1565425688679" duration="17000" />
-      <workItem from="1565576218976" duration="3605000" />
-      <workItem from="1565688254410" duration="1228000" />
-      <workItem from="1565773094523" duration="7551000" />
-      <workItem from="1565831723945" duration="16689000" />
-      <workItem from="1565918227934" duration="5608000" />
-      <workItem from="1566883192897" duration="16278000" />
-      <workItem from="1566954919839" duration="21000" />
-      <workItem from="1566955849803" duration="380000" />
-      <workItem from="1567435651984" duration="1037000" />
-      <workItem from="1567473623985" duration="1784000" />
-      <workItem from="1568856263508" duration="9996000" />
-      <workItem from="1568902109696" duration="2199000" />
-      <workItem from="1568941474505" duration="2111000" />
-      <workItem from="1569425017677" duration="108000" />
-      <workItem from="1569460230160" duration="769000" />
-      <workItem from="1569679848090" duration="1314000" />
-      <workItem from="1569724341609" duration="1965000" />
-      <workItem from="1571043107480" duration="3921000" />
-      <workItem from="1571149570779" duration="2428000" />
-      <workItem from="1571236309860" duration="211000" />
-      <workItem from="1571236552331" duration="74000" />
+      <updated>1571994440191</updated>
+      <workItem from="1571994442410" duration="635000" />
+      <workItem from="1571996319735" duration="702000" />
+      <workItem from="1572273830371" duration="828000" />
     </task>
-    <task id="LOCAL-00038" summary="设计模式">
-      <created>1561101285900</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1561101285900</updated>
-    </task>
-    <task id="LOCAL-00039" summary="设计模式">
-      <created>1561110644288</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1561110644288</updated>
-    </task>
-    <task id="LOCAL-00040" summary="JavaScript进阶篇 js高级篇">
-      <created>1561647625495</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1561647625496</updated>
-    </task>
-    <task id="LOCAL-00041" summary="JavaScript进阶篇 js高级篇">
-      <created>1561649086698</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1561649086698</updated>
-    </task>
-    <task id="LOCAL-00042" summary="JavaScript进阶篇 js高级篇">
-      <created>1561649476284</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1561649476284</updated>
-    </task>
-    <task id="LOCAL-00043" summary="JavaScript进阶篇 js高级篇">
-      <created>1561649994095</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1561649994095</updated>
-    </task>
-    <task id="LOCAL-00044" summary="JavaScript进阶篇 js高级篇">
-      <created>1561973099818</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1561973099818</updated>
-    </task>
-    <task id="LOCAL-00045" summary="单例设计模式">
-      <created>1563547348404</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1563547348405</updated>
-    </task>
-    <task id="LOCAL-00046" summary="...">
-      <created>1563781061779</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1563781061779</updated>
-    </task>
-    <task id="LOCAL-00047" summary="封装一些有用的方法">
-      <created>1563980873284</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1563980873284</updated>
-    </task>
-    <task id="LOCAL-00048" summary="set方法实现数据去重">
-      <created>1564388015208</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1564388015208</updated>
-    </task>
-    <task id="LOCAL-00049" summary="forEach filter实现封装数组去重">
-      <created>1564391135084</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1564391135084</updated>
-    </task>
-    <task id="LOCAL-00050" summary="封装解绑事件函数">
-      <created>1564394088554</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1564394088554</updated>
-    </task>
-    <task id="LOCAL-00051" summary="共享原型数据">
-      <created>1564449601739</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1564449601741</updated>
-    </task>
-    <task id="LOCAL-00052" summary="push之前的判断">
-      <created>1565146589708</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1565146589708</updated>
-    </task>
-    <task id="LOCAL-00053" summary=".">
-      <created>1565274863774</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1565274863776</updated>
-    </task>
-    <task id="LOCAL-00054" summary=".">
-      <created>1565342169495</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1565342169496</updated>
-    </task>
-    <task id="LOCAL-00055" summary=".">
-      <created>1565344344264</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1565344344264</updated>
-    </task>
-    <task id="LOCAL-00056" summary="创建对象">
-      <created>1565775385563</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1565775385564</updated>
-    </task>
-    <task id="LOCAL-00057" summary="工厂模式">
-      <created>1565791237198</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1565791237198</updated>
-    </task>
-    <task id="LOCAL-00058" summary="构造函数模式">
-      <created>1565794444602</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1565794444602</updated>
-    </task>
-    <task id="LOCAL-00059" summary="原型模式">
-      <created>1565794931798</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1565794931798</updated>
-    </task>
-    <task id="LOCAL-00060" summary="创建对象方法与继承方法">
-      <created>1565856195861</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1565856195862</updated>
-    </task>
-    <task id="LOCAL-00061" summary="原型链继承">
-      <created>1565862840759</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1565862840759</updated>
-    </task>
-    <task id="LOCAL-00062" summary="借助构造函数">
-      <created>1565862888437</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1565862888437</updated>
-    </task>
-    <task id="LOCAL-00063" summary="组合继承">
-      <created>1565863644024</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1565863644024</updated>
-    </task>
-    <task id="LOCAL-00064" summary="组合使用构造函数模式与原型模式">
-      <created>1565919153350</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1565919153351</updated>
-    </task>
-    <task id="LOCAL-00065" summary="数组检测方法">
-      <created>1565920418393</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1565920418393</updated>
-    </task>
-    <task id="LOCAL-00066" summary="转换方法">
-      <created>1565921378031</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1565921378031</updated>
-    </task>
-    <task id="LOCAL-00067" summary="栈方法">
-      <created>1566883227735</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1566883227736</updated>
-    </task>
-    <task id="LOCAL-00068" summary="移动端遮罩层穿透问题">
-      <created>1566900016513</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1566900016513</updated>
-    </task>
-    <task id="LOCAL-00069" summary="完美解决滚动穿透问题">
-      <created>1566914087760</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1566914087761</updated>
-    </task>
-    <task id="LOCAL-00070" summary="fill()">
-      <created>1567438208992</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1567438208993</updated>
-    </task>
-    <task id="LOCAL-00071" summary="push">
-      <created>1568859078016</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1568859078023</updated>
-    </task>
-    <task id="LOCAL-00072" summary="pop">
-      <created>1568859902885</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1568859902885</updated>
-    </task>
-    <task id="LOCAL-00073" summary="map">
-      <created>1568872505499</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1568872505499</updated>
-    </task>
-    <task id="LOCAL-00074" summary="indexOf">
-      <created>1568887033734</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1568887033734</updated>
-    </task>
-    <task id="LOCAL-00075" summary="findIndex">
-      <created>1568902916553</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1568902916556</updated>
-    </task>
-    <task id="LOCAL-00076" summary="every">
-      <created>1568903949498</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1568903949498</updated>
-    </task>
-    <task id="LOCAL-00077" summary="every">
-      <created>1569425033997</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1569425033998</updated>
-    </task>
-    <task id="LOCAL-00078" summary="every">
-      <created>1569425056954</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1569425056954</updated>
-    </task>
-    <task id="LOCAL-00079" summary="...">
-      <created>1569681152934</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1569681152934</updated>
-    </task>
-    <task id="LOCAL-00080" summary="创建星级评分系统案例">
-      <created>1571043433676</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1571043433676</updated>
-    </task>
-    <task id="LOCAL-00081" summary="删除无用的文件信息">
-      <created>1571043955802</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1571043955802</updated>
-    </task>
-    <task id="LOCAL-00082" summary="style">
-      <created>1571046997964</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1571046997964</updated>
-    </task>
-    <task id="LOCAL-00083" summary="修改样式，添加描述文字">
-      <created>1571150503892</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1571150503893</updated>
-    </task>
-    <task id="LOCAL-00084" summary="添加onmouseover事件">
-      <created>1571151683220</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1571151683220</updated>
-    </task>
-    <task id="LOCAL-00085" summary="添加onmouseover事件">
-      <created>1571151983300</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1571151983300</updated>
-    </task>
-    <task id="LOCAL-00086" summary="&#10;.">
-      <created>1571236352624</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1571236352626</updated>
-    </task>
-    <option name="localTasksCounter" value="87" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288255000" />
+    <option name="totallyTimeSpent" value="4275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -684,362 +169,42 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="原型模式" />
-    <MESSAGE value="创建对象方法与继承方法" />
-    <MESSAGE value="原型链继承" />
-    <MESSAGE value="借助构造函数" />
-    <MESSAGE value="组合继承" />
-    <MESSAGE value="组合使用构造函数模式与原型模式" />
-    <MESSAGE value="数组检测方法" />
-    <MESSAGE value="转换方法" />
-    <MESSAGE value="栈方法" />
-    <MESSAGE value="移动端遮罩层穿透问题" />
-    <MESSAGE value="完美解决滚动穿透问题" />
-    <MESSAGE value="fill()" />
-    <MESSAGE value="push" />
-    <MESSAGE value="pop" />
-    <MESSAGE value="map" />
-    <MESSAGE value="indexOf" />
-    <MESSAGE value="findIndex" />
-    <MESSAGE value="every" />
-    <MESSAGE value="..." />
-    <MESSAGE value="创建星级评分系统案例" />
-    <MESSAGE value="删除无用的文件信息" />
-    <MESSAGE value="style" />
-    <MESSAGE value="修改样式，添加描述文字" />
-    <MESSAGE value="添加onmouseover事件" />
-    <MESSAGE value="&#10;." />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;." />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/dahuaxiyou.jpg" />
-    <entry file="file://$PROJECT_DIR$/面向对象实现轮播效果/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1206">
-          <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding>
-            <element signature="e#307#365#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listernFunction.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-对象优化/tab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-对象优化/面向对象-对象优化.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/封装demo/分页/page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="14" column="145" lean-forward="true" selection-start-line="14" selection-start-column="145" selection-end-line="14" selection-end-column="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象实现轮播效果/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/封装demo/表格/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3456">
-          <caret line="192" column="13" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/封装demo/分页/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/封装demo/分页/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/封装demo/分页/参考文章">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/实现继承六种方法/1-原型链继承.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/实现继承六种方法/2-借助构造函数.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-矩形.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-绚丽小球.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-计算器.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-选项卡.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/面向对象-选项卡2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象-继承精讲/Tab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/实现继承六种方法/3-组合继承.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callapply.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/执行环境和作用域.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/1-数组检测.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/创建对象七种方式/组合使用构造函数模式与原型模式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/遮罩层/address.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/遮罩层/addEventListener.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/遮罩层/1.mask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/遮罩层/2.mask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/遮罩层/3.mask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/遮罩层/4.mask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/2-转换方法.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/4.fill().js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/3.栈方法.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/5.push().js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/6.pop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/7.map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/8.indexOf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/9.findIndex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/10.every.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/创建对象七种方式/创建对象的七种方式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="216" column="38" lean-forward="true" selection-start-line="216" selection-start-column="38" selection-end-line="216" selection-end-column="38" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/面向对象实现轮播效果/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="139" column="6" lean-forward="true" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/继承3.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/防止用户重复提交.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/防止非按钮对象重复提交.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/随机生成背景色.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/封装demo/选项卡/tab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="61" column="19" lean-forward="true" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/封装demo/表格/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="171" column="40" selection-start-line="171" selection-start-column="40" selection-end-line="171" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/星级评分系统/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/星级评分系统/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/throttle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/完美继承.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="37" selection-start-line="37" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callapply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1050,27 +215,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/星级评分系统/main.js">
+    <entry file="file://$PROJECT_DIR$/Ajax封装/1.ES6标准下的ajax封装.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/Ajax封装/2.普通Ajax封装.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="66" selection-start-column="66" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
