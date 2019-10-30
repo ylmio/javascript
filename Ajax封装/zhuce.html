@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+<h1>注册界面</h1>
+<form action="">
+    <label for="username">
+        用户名：<input type="text" id="username" name="username">
+    </label>
+    <input type="button" id="ebtn" value="验证用户名">
+    <span id="result"></span>
+</form>
+<script src="3.普通Ajax封装.js"></script>
+<script>
+    var ebtn = document.getElementById("ebtn");
+    ebtn.onclick = function(){
+        var username = document.getElementById("username").value;
+        console.log(username);
+        var obj = {
+            type:"get",
+            url:"checkUsername.php",
+            data:{username:username},
+            dataType:"text",
+            success:function(result){
+                document.getElementById("result").innerHTML = result;
+            }
+        }
+    }
+</script>
+</body>
+</html>

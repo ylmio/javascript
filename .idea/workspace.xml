@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73c4303e-2da7-459a-b082-61d22e06f134" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Ajax封装/zhuce.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ajax封装/3.普通Ajax封装.js" beforeDir="false" afterPath="$PROJECT_DIR$/Ajax封装/3.普通Ajax封装.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,8 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -41,14 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ajax封装/3.普通Ajax封装.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+            <state relative-caret-position="945">
+              <caret line="60" column="42" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ajax封装/zhuce.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="27" column="68" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -60,6 +68,7 @@
       <list>
         <option value="AMD JavaScript File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -73,6 +82,7 @@
         <option value="$PROJECT_DIR$/Ajax封装/1.ES6标准下的ajax封装.js" />
         <option value="$PROJECT_DIR$/Ajax封装/2.普通Ajax封装.js" />
         <option value="$PROJECT_DIR$/Ajax封装/3.普通Ajax封装.js" />
+        <option value="$PROJECT_DIR$/Ajax封装/zhuce.html" />
       </list>
     </option>
   </component>
@@ -109,6 +119,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -149,7 +160,7 @@
       <workItem from="1572273830371" duration="945000" />
       <workItem from="1572311523359" duration="489000" />
       <workItem from="1572317854409" duration="5631000" />
-      <workItem from="1572397384630" duration="2318000" />
+      <workItem from="1572397384630" duration="3543000" />
     </task>
     <task id="LOCAL-00002" summary="ajax封装">
       <created>1572274678061</created>
@@ -165,11 +176,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572322220568</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="封装Ajax-2">
+      <created>1572402413103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572402413103</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12830000" />
+    <option name="totallyTimeSpent" value="14055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -209,7 +227,8 @@
     <MESSAGE value="." />
     <MESSAGE value="ajax封装" />
     <MESSAGE value="普通Ajax封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="普通Ajax封装" />
+    <MESSAGE value="封装Ajax-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装Ajax-2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/星级评分系统/index.html">
@@ -273,11 +292,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ajax封装/3.普通Ajax封装.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="945">
+          <caret line="60" column="42" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ajax封装/zhuce.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="27" column="68" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="68" />
         </state>
       </provider>
     </entry>
