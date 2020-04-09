@@ -8,7 +8,7 @@
 
 
 <script>
-    function CreatePerson(name,age,job){
+    function Person(name,age,job){
         this.name = name;
         this.age = age;
         this.job = job;
@@ -17,8 +17,21 @@
         }
     }
 
-    var person1 = new CreatePerson("李白",50,"诗人");
+    var person1 = new Person("李白",50,"诗人");
     person1.sayName();
+    var person2 = new Person("李白",50,"诗人");
+
+    console.log(person1.constructor === Person); //true
+    console.log(person2.constructor === Person); //true
+
+
+    console.log(typeof null); //object
+    console.log(typeof undefined); //undefined
+    console.log(typeof Boolean); //function
+    console.log(typeof Number); //function
+    console.log(typeof string); //undefined
+    console.log(typeof Object); //function
+
 </script>
 
 </body>
