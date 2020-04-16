@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态原型模式</title>
+</head>
+<body>
+
+
+<script>
+    /*
+    * 有其他OO语言经验的开发人员在看到独立的构造函数和原型时，很可能会感到非常困惑。动态原型模式正是致力于解决这个问题的一个方案，
+    * 它把所有的信息都封装在了构造函数中，而通过在构造函数中初始化原型(仅在必要的情况下)，又保持了同时使用构造函数和原型的优点。
+    * 换句话说，可以通过检查某个应该存在的方法是否有效，来决定是否需要初始化原型
+    * */
+
+    function Person(name,age,job){
+
+        //属性
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.friends = ["杜甫","陶渊明"];
+
+        //方法
+        if(typeof this.sayName != 'function'){
+            Person.prototype.sayName = function(){
+                console.log(this.name);
+            }
+            //使用动态原型模式时，不能使用对象字面量重写原型，现在的写法是不合法的
+            // Person.prototype = {
+            //     sayName : function () {
+            //         console.log(this.name);
+            //     }
+            // }
+        }
+    }
+
+    //实例化对象
+    var person1 = new Person("李清照",40,"南宋词人");
+    var person2 = new Person("李白",50,"初唐诗人");
+
+    person1.friends.push("杜牧");
+
+    console.log(person1.friends);//"杜甫","陶渊明","杜牧"
+    console.log(person2.friends);//"杜甫","陶渊明"
+
+    console.log(person1.friends === person2.friends);//false
+    console.log(person1.sayName === person2.sayName);//true
+
+    /*
+    * 注意 构造 函数 代码 中 加 背景 的 部分。 这里 只在 sayName() 方法 不存在 的 情况下， 才会 将它 添加 到 原型 中。 这段 代码 只会 在 初次 调用 构造 函数 时 才会 执行。 此后， 原型 已经 完成 初始化， 不需要 再做 什么 修改 了。 不过 要 记住， 这里 对 原型 所做 的 修改， 能够 立即 在 所有 实例 中 得到 反映。 因此， 这种 方法 确实 可以说 非常 完美。 其中， if 语句 检查 的 可以 是 初始化 之后 应该 存在 的 任何 属性 或 方法—— 不必 用 一大堆 if 语句 检查 每个 属性 和 每个 方法； 只要 检查 其中 一个 即可。 对于 采用 这种 模式 创建 的 对象， 还可以 使用 instanceof 操作 符 确定 它的 类型。
+
+    *
+    * */
+
+    /*
+    * 使用 动态 原型 模式 时， 不能 使用 对象 字面 量重 写 原型。 前面 已经 解释 过了， 如果 在 已经 创建 了 实例 的 情况下 重写 原型， 那么 就会 切断 现有 实例 与 新 原型 之间 的 联系。
+
+泽卡斯(Zakas. Nicholas C.). JavaScript高级程序设计(第3版) (图灵程序设计丛书) (Kindle 位置 5911-5912). 人民邮电出版社. Kindle 版本.
+    *
+    * */
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

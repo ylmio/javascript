@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组合使用构造函数模式与原型模式</title>
+</head>
+<body>
+
+
+<script>
+    /*
+    * 创建构造函数最常见的方式就是组合使用构造函数模式与原型模式。
+    * 构造函数模式用于定义实例属性，而原型模式用于定义方法和共享的属性。
+    * 结果，每个实例都会有自己的一份实例属性的副本，但同时又共享着对方法的引用，最大限度地节省了内存。
+    * 另外，这种混成模式还支持向构造函数传递参数；可谓集两种模式之长。
+    *
+    * */
+
+    //构造函数模式定义实例属性
+    function Person(name,age,job){
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.friends = ["杜甫","陶渊明"];
+    }
+    //原型模式定义方法和共享的属性
+    Person.prototype = {
+        constructor:Person,//所有实例共享的属性constructor
+        sayName:function(){
+            console.log(this.name);
+        }
+    };
+
+    //实例化对象
+    var person1 = new Person("李清照",40,"南宋词人");
+    var person2 = new Person("李白",50,"初唐诗人");
+
+    person1.friends.push("杜牧");
+
+    console.log(person1.friends);//"杜甫","陶渊明","杜牧"
+    console.log(person2.friends);//"杜甫","陶渊明"
+
+    console.log(person1.friends === person2.friends);//false
+    console.log(person1.sayName === person2.sayName);//true
+
+    /*
+    * 在这个例子中，实例属性都是在构造函数中定义的，而由所有实例共享的属性constructor和方法sayName()则是在原型中定义的。
+    * 修改了person1.friends(向其中添加了一个新字符串)，并不会影响到person2.friends,因为他们引用了不同的数组。
+    * 这种构造函数与原型混成的模式，是目前ECMAScript中使用最广泛、认同度最高的一种创建自定义类型的方法。可以说，这是自定义引用类型的一种默认模式。
+    *
+    * */
+
+    /*
+    * 组合使用构造函数模式与原型模式的问题
+    * 构造函数和原型是独立的，会让具有OO语言经验的开发人员感到困惑
+    * */
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

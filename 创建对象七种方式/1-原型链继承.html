@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链继承</title>
+</head>
+<body>
+<script>
+
+    /*
+    开始......................
+    * 我们创建的每一个函数都有一个prototype属性，这个属性是一个指针，指向一个对象，而这个对象包含所有实例共享的属性和方法。
+    * 按照字面意思来理解，prototype就是通过调用构造函数而创建的那个对象的原型对象。
+    * 使用原型对象的好处是：可以让所有的对象实例共享它所包含的属性和方法。
+    *换句话说，不必在构造函数中定义对象实例的信息，而是将这些信息直接添加到原型对象中，如下面的例子
+    *
+    * */
+
+    //定义一个空的构造函数
+    function Person(){ //注意规范，构造函数首字母应大写
+
+    }
+    //将属性和方法添加到构造函数的原型对象中
+    Person.prototype.name = "LiBai";
+    Person.prototype.age = 60;
+    Person.prototype.job = "诗人";
+    Person.prototype.sayName = function(){
+        console.log(this.name);
+    };
+    //调用构造函数来创建新对象
+    var person1 = new Person();
+    person1.sayName();//LiBai
+    var person2 = new Person();
+    person2.sayName();//LiBai
+
+
+    /*
+    * 在此，我们将sayName()方法和所有属性直接添加到了Person的prototype属性中，构造函数变成了空函数。我们可以通过
+    * 调用构造函数来创建新对象，而且新对象还会具有相同的属性和方法。
+    * 但与构造函数模式不同的是，新对象的这些属性和方法是由所有实例共享的。
+    *换句话说，person1和person2访问的都是同一组属性和同一个sayName()函数。我们可以验证一下：
+    *
+    * */
+    console.log(person1.sayName === person2.sayName); //true
+
+
+
+    /*
+    * 原型模式的问题：
+    *首先，它省略了为构造函数传递初始化参数这一环节，结果所有实例在默认情况下都将取得相同的属性值。虽然这会在某种程度上带来一些不便，但还不是原型、
+    * 模式的最大问题。原型模式的最大问题是由其共享的本性所导致的。
+    * 原型中所有属性是被很多实例共享的，这种共享对于函数非常合适。对于那些包含基本值的属性倒也说得过去，毕竟，通过在实例上添加一个同名属性，可以隐藏
+    * 原型中的对应属性。然而，对于包含引用类型值的属性来说，问题就比较突出了，来看下面的例子
+    * */
+
+    function Person(){
+
+    }
+
+    Person.prototype = {
+        constructor : Person,
+        name : "LiBai",
+        age : 60,
+        job : "诗人",
+        friends : ["杜甫","白居易"],
+        sayName : function () {
+            console.log(this.name)
+        }
+    }
+
+    var person1 = new Person();
+    var person2 = new Person();
+    person1.friends.push("陶渊明");
+
+    console.log(person1.friends);//["杜甫", "白居易", "陶渊明"]
+    console.log(person2.friends);//["杜甫", "白居易", "陶渊明"]
+    console.log(person1.friends === person2.friends);//true
+
+
+    /*
+    *在此，Person.prototype对象有一个名为friends的属性，该属性包含一个字符串数组。然后，创建了Person的两个实例。接着修改了person1.friends
+    * 引用的数组，并向数组中添加了一个字符串。由于friends数组存在于Person.prototype而非person1中，所以刚刚提到的修改也会通过person2.friends
+    * (与person1.friends指向同一个数组)反映出来。可是，实例一般都是要有属于自己的全部属性的。而这个问题正是我们很少看到有人单独使用原型模式的原因所在。
+    *
+    * */
+
+
+
+
+
+
+</script>
+</body>
+</html>
