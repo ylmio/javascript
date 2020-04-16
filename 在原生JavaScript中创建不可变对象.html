@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在原生JavaScript中创建不可变对象</title>
+</head>
+<body>
+    <script>
+        const myTesla= {
+            maxSpeed : 155,
+            batteryLife : 300,
+            weight : 2300
+        };
+        Object.freeze(myTesla);
+        console.log(Object.isFrozen(myTesla));//true
+    </script>
+</body>
+</html>
