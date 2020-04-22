@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现继承：借用构造函数</title>
+</head>
+<body>
+
+
+<script type="text/html">
+    function SuperType() {
+        this.colors = ["red","blue","green"];
+    }
+
+    function SubType() {
+        //继承了SuperType
+        SuperType.call(this);
+    }
+
+    var instance1 = new SubType();
+    instance1.colors.push("black");
+    console.log(instance1.colors);//["red", "blue", "green", "black"]
+
+    var instance2 = new SubType();
+    console.log(instance2.colors);//["red", "blue", "green"]
+
+</script>
+
+<script>
+    function SuperType(name) {
+    this.name = name;
+    }
+
+    function SubType() {
+        //继承了SuperType,同时传递了参数
+        SuperType.call(this,"唐纳德特朗普");
+        //实例属性
+        this.age = 75;
+    }
+
+    var instance1 = new SubType();
+    console.log(instance1.name);//唐纳德特朗普
+    console.log(instance1.age);//75
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
