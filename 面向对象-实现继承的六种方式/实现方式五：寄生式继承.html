@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>寄生式继承</title>
+</head>
+<body>
+
+
+<script>
+    function object(o){
+        function F() {}
+        F.prototype = o;
+        return new F();
+    }
+    function createAnother(original){
+        var clone = object(original);//通过调用函数创建一个新对象
+        clone.sayHi = function () {//以某种方式来增强这个对象
+            console.log("Hi");
+        };
+        return clone; //返回这个对象
+    }
+
+
+    var person = {
+        name:"李白",
+        friends:["杜甫","陆游"]
+    };
+
+    var anotherPerson = createAnother(person);
+    anotherPerson.sayHi();//Hi
+    anotherPerson.friends.push("杜牧");
+    console.log(anotherPerson.friends);// ["杜甫", "陆游", "杜牧"]
+
+    var yetAnotherPerson = createAnother(person);
+    console.log(yetAnotherPerson.friends);// ["杜甫", "陆游", "杜牧"]
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
