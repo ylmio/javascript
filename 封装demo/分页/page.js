@@ -161,7 +161,7 @@ pageNation = (function () {
         linkTag.href = cssURL;
         linkTag.setAttribute('rel', 'stylesheet');
         linkTag.setAttribute('media', 'all');
-        linkTag.setAttribute('type', 'text/css');
+        linkTag.setAttribute('type', 'readme1/css');
         headDoc.appendChild(linkTag);
     };
     proto.switchPage = function (fun) {
