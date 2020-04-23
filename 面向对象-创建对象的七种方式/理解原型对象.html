@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<script>
+<script type="text/html">
 
     function Person(){
 
@@ -148,8 +148,47 @@
     * */
 
 
+
+
+
+
+
+
+
 </script>
 
+<script>
+    //定义一个空的构造函数
+    function Person(){
+
+    }
+    //将属性和方法添加到构造函数的原型对象中
+    Person.prototype.name = "李白";
+    Person.prototype.age = 60;
+    Person.prototype.job = "诗人";
+    Person.prototype.sayName = function(){
+        console.log(this.name);
+    };
+    //调用构造函数来创建新对象
+    var person1 = new Person();
+    var person2 = new Person();
+
+    console.log(person1.hasOwnProperty("name"));//false
+
+    person1.name = "杜甫";
+    console.log(person1.name);//"杜甫"来自实例
+    console.log(person1.hasOwnProperty("name"));//true
+
+    console.log(person2.name);//"李白"来自原型
+    console.log(person2.hasOwnProperty("name"));//false
+
+    delete person1.name;
+    console.log(person1.name);//"李白"来自原型
+    console.log(person1.hasOwnProperty("name"));//false
+
+
+
+</script>
 
 
 

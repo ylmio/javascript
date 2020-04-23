@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/html">
+    //定义一个空的构造函数
+    function Person(){
+
+    }
+    //将属性和方法添加到构造函数的原型对象中
+    Person.prototype.name = "李白";
+    Person.prototype.age = 60;
+    Person.prototype.job = "诗人";
+    Person.prototype.sayName = function(){
+        console.log(this.name);
+    };
+    //调用构造函数来创建新对象
+    var person1 = new Person();
+    var person2 = new Person();
+
+    console.log(person1.hasOwnProperty("name"));//false
+    console.log("name" in person1);//true
+
+    person1.name="杜甫";
+    console.log(person1.name);//"杜甫 " 来自实例
+    console.log(person1.hasOwnProperty("name"));//true
+    console.log("name" in person1);//true
+
+    console.log(person2.name);//"李白 " 来自原型
+    console.log(person2.hasOwnProperty("name"));//false
+    console.log("name" in person2);//true
+
+    delete person1.name;
+    console.log(person1.name);//"李白 " 来自实例
+    console.log(person1.hasOwnProperty("name"));//false
+    console.log("name" in person1);//true
+
+
+
+
+
+
+</script>
+
+<script>
+    function hasPrototypeProperty(object,name){
+        return !object.hasOwnProperty(name)&&(name in object)
+    }
+    //定义一个空的构造函数
+    function Person(){
+
+    }
+    //将属性和方法添加到构造函数的原型对象中
+    Person.prototype.name = "李白";
+    Person.prototype.age = 60;
+    Person.prototype.job = "诗人";
+    Person.prototype.sayName = function(){
+        console.log(this.name);
+    };
+    //调用构造函数来创建新对象
+    var person = new Person();
+    console.log(hasPrototypeProperty(person, "name"));//true 说明读取的是原型中属性
+
+    person.name = "杜甫";
+    console.log(hasPrototypeProperty(person, "name"));//false 说明读取的是实例中的属性
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
