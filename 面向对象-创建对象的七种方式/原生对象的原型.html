@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生对象的原型</title>
+</head>
+<body>
+
+
+<script type="text/html">
+    console.log(Array.prototype);
+    console.log(typeof Array.prototype.sort);//function
+
+    console.log(String.prototype);
+    console.log(typeof String.prototype.substring);//function
+
+
+</script>
+
+<script>
+    String.prototype.startsWith = function (text) {
+        return this.indexOf(text) === 0;
+    };
+
+    var msg = "Hello World";
+    console.log(msg.startsWith("Hello"));//true
+
+
+</script>
+
+
+
+
+</body>
+</html>
