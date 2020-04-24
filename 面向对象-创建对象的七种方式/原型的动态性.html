@@ -7,14 +7,23 @@
 <body>
 
 <script>
-var friend = new Person();
+
 
 function Person(){}
-Person.prototype.sayHi = function () {
-    console.log("Hi")
-}
 
-friend.sayHi();//Hi
+var friend = new Person();
+
+
+Person.prototype={
+    constructor:Person,
+    name:"LiBai",
+    age:60,
+    job:"诗人",
+    sayName:function () {
+        console.log(this.name);
+    }
+};
+friend.sayName();//friend.sayName is not a function
 
 
 
