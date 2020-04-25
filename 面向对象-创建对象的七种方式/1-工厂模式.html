@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工厂模式</title>
+</head>
+<body>
+<script>
+    //工厂模式
+    function createPerson(name,age,job){
+        var o = new Object();
+        o.name= name;
+        o.age = age;
+        o.job = job;
+        o.sayName = function(){
+            alert(this.name);
+        };
+        return o;
+    }
+
+    var person1 = createPerson("李白",50,"工程师");
+    var person2 = createPerson("杜甫",60,"诗人");
+
+    console.log(person1 instanceof createPerson); //false
+    console.log(typeof person1); //false
+
+
+
+
+
+</script>
+</body>
+</html>
