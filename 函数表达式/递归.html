@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>递归函数</title>
+</head>
+<body>
+
+
+<script type="text/html">
+    function factorial(num){
+        if(num<=1){
+            return 1;
+        }else{
+            return num*factorial(num-1)
+        }
+    }
+
+    console.log(factorial(5));//120
+
+    //下面的代码导致使用函数声明创建的递归函数产生错误
+    var anotherFactorial = factorial;
+    factorial = null;
+    console.log(anotherFactorial(5));//Uncaught TypeError: factorial is not a function
+
+</script>
+
+<script type="text/html">
+    function factorial(num){
+        if(num<=1){
+            return 1;
+        }else{
+            return num*arguments.callee(num-1)
+        }
+    }
+
+    var anotherFactorial = factorial;
+    factorial = null;
+    console.log(anotherFactorial(5));//120
+</script>
+
+<script>
+    "use strict";
+    var  factorial = (function f(num){
+        if(num<=1){
+            return 1;
+        }else{
+            return num*f(num-1)
+        }
+    });
+
+    var anotherFactorial = factorial;
+    factorial = null;
+    console.log(anotherFactorial(5));//120
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定义函数的方式</title>
+</head>
+<body>
+
+
+<script type="text/html">
+    function functionName(arg0,arg1,arg2){
+        //函数体
+    }
+</script>
+
+<script type="text/html">
+    //不会抛出错误，因为代码执行之前会先读取函数声明
+    sayHi();
+    function sayHi() {
+        alert("Hi")
+    }
+</script>
+
+<script type="text/html">
+    var functionName = function (arg0,arg1,arg2) {
+        //函数体
+    }
+</script>
+
+<script type="text/html">
+    //sayHi is not a function
+    sayHi();
+    var sayHi = function() {
+        alert("Hi")
+    }
+</script>
+
+<script type="text/html">
+    //不要这样做
+    if(condition){
+        function sayHi() {
+            console.log("Hi!")
+        }
+    }else{
+        function sayHi() {
+            console.log("Yo!")
+        }
+    }
+</script>
+
+<script type="text/html">
+    var sayHi;
+    var condition = 2 > 1;
+    //可以这样做
+    if(condition){
+        sayHi = function() {
+            console.log("Hi!")
+        }
+    }else{
+        sayHi = function() {
+            console.log("Yo!")
+        }
+    }
+
+    sayHi(condition);//Hi
+</script>
+
+<script>
+    function createComparisionFunction(){
+        return function (object1,object2) {
+            var value1 = object1[prototypeName];
+            var value2 = object2[prototypeName];
+
+            if(value1<value2){
+                return -1;
+            }else if(value1>value2){
+                return 1;
+            }else {
+                return 0;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
