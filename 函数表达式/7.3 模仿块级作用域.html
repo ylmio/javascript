@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模仿块级作用域</title>
+</head>
+<body>
+
+
+<script type="text">
+    function outputNumbers(count){
+        for(var i=0;i<count;i++){
+            alert(i);
+        }
+        alert(i);
+    }
+
+    outputNumbers(3);
+</script>
+
+<script type="text">
+    function outputNumbers(count){
+        for(var i=0;i<count;i++){
+            alert(i);
+        }
+        var i; //重新声明变量
+        alert(i); //计数
+    }
+
+    var count = 5;
+    outputNumbers(count);
+</script>
+
+<script type="text">
+    (function(){
+        //这里是块级作用域
+    })();
+</script>
+
+<script type="text">
+    var someFunction = function () {
+        //这里是块级作用域
+    };
+    someFunction();
+</script>
+
+<script type="text">
+    (function () {
+
+    })();
+
+</script>
+
+<script type="text">
+    function outputNumbers(count){
+        (function(){
+            for(var i=0;i<count;i++){
+                alert(i);
+            }
+        })();
+        alert(i); //导致一个错误！
+    }
+</script>
+
+<script>
+    (function () {
+        var now = new Date();
+        if(now.getMonth() ===0 && now.getDate() ===1){
+            alert("HAPPY NEW YEAR!")
+        }
+    })();
+</script>
+
+
+
+</body>
+</html>
