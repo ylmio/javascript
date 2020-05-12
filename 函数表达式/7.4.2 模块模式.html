@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模块模式</title>
+</head>
+<body>
+
+
+<script type="text">
+    var singleton = {
+        name : value,
+        method : function () {
+            //这里写方法的代码
+        }
+    };
+    //模块模式通过为单例添加私有变量和特权方法能够使其得到增强，其语法形式如下：
+
+</script>
+
+<script type="text">
+
+    var singleton = function () {
+
+        //私有变量和私有函数
+        var privateVariable = 10;
+
+        function privateFunction(){
+            return false;
+        }
+
+        //特权/公有方法和属性
+        return {
+            publicProperty : true,
+
+            publicMethod : function () {
+                privateVariable++;
+                return privateFunction();
+            }
+        };
+    }();
+
+</script>
+
+<script>
+    var application = function () {
+
+        //私有变量和函数
+        var components = new Aarray();
+
+        //初始化
+        components.push(new BaseComponent());
+
+        //公共
+        return {
+            getComponentCount:function () {
+                return components.length;
+            },
+            registerComponent : function (component) {
+                if(typeof component == "object"){
+                    components.push(component);
+                }
+            }
+        };
+    }();
+</script>
+
+</body>
+</html>
