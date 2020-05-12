@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内存泄漏</title>
+</head>
+<body>
+
+
+<script type="text">
+    function assignHandler(){
+        var element = document.getElementById("someElement");
+        element.onclick = function () {
+            console.log(element.id)
+        }
+    }
+</script>
+
+<script>
+    function assignHandler(){
+        var element = document.getElementById("someElement");
+        var id = element.id;
+
+        element.onclick = function () {
+            console.log(id)
+        };
+        element = null;
+    }
+</script>
+</body>
+</html>
