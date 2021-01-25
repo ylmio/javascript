@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建一个无重复元素的新数组</title>
+</head>
+<body>
+
+
+    <script>
+        
+        function eliminateDuplicates(items){
+            // return [new Set(...items)]
+            return [...new Set(items)]
+            // return new Set([...items])
+        }
+        let numbers = [1,2,3,3,3,4,5],
+        noDuplicates = eliminateDuplicates(numbers);
+        console.log(noDuplicates);
+        console.log(Array.isArray(noDuplicates));
+
+    </script>
+    
+</body>
+</html>

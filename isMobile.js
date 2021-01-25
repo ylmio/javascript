@@ -11,3 +11,11 @@ isMobile=(mobile)=>{
 }
 
 isMobile(pho);
+
+let countDown = (num)=>{
+    while (num-- >0){
+        console.log(num);
+    }
+}
+
+countDown(5);
