@@ -31,3 +31,31 @@ function transformTime(timestamp = +new Date()) {
 }
 
 `
+
+
+
+`    let readFile=(f)=>{
+
+​      let reader = new FileReader();
+
+​      reader.readAsText(f);
+
+​      reader.onload=()=>{
+
+​        let text = reader.result;
+
+​        var out = document.getElementById("output");
+
+​        out.innerHTML = "";
+
+​        out.appendChild(document.createTextNode(text));
+
+​      }
+
+​      reader.onerror=(e)=>{
+
+​        console.log("Error",e);
+
+​      }
+
+​    }`
