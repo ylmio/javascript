@@ -6,6 +6,9 @@
 </head>
 <body>
 
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+
 <script type="text/html">
 
 function object(o){
@@ -58,13 +61,71 @@ console.log(person.friends);//["杜甫", "杜牧", "李清照", "陆游"]
 </script>
 
 <script>
-    var person = {
-        name : "李白",
-        friends : ["杜甫","杜牧"]
-    };
+    // var person = {
+    //     name : "李白",
+    //     friends : ["杜甫","杜牧"]
+    // };
 
-    var anotherPerson = Object.create(person,{name:{value:"杜甫"}});
-    console.log(anotherPerson.name);//杜甫
+    // var anotherPerson = Object.create(person,{name:{value:"杜甫"}});
+    // console.log(anotherPerson.name);//杜甫
+
+
+    // var per1 = Object.create(person,{name:{value:"朱利安"}});
+    // console.log(per1.friends);
+    var result = {
+        status:200,
+        data:[
+            {name:"one",age:10,hobby:"羽毛球"}
+        ]
+    }
+
+    function Person(name,age,hobby){
+        this.name = name;
+        this.age = age;
+        this.hobby = hobby;
+    }
+
+    var pone = new Person("朱晓明",20,"打乒乓球");
+    console.log(pone);
+    
+
+
+    
+    function createZHENG (o){
+        function F(){}
+        F.prototype = o;
+        return new F();
+    }
+
+
+
+    var benlai = {
+        width : 200,
+        height : 200,
+        background : "#f0f0f0",
+        onCl : function(){
+            alert(this.width + this.height);
+        }
+    }
+
+    var demo_1 = new createZHENG(benlai);
+    demo_1.width = 500;
+    demo_1.background = "#000000";
+
+    var newd = document.getElementById("demo1");
+    newd.style.width = demo_1.width + "px";
+    newd.style.height = demo_1.height + "px";
+    newd.style.background = demo_1.background;
+    console.log(newd);
+
+    var demo_2 = new createZHENG(benlai);
+    var newd2 = document.getElementById("demo2");
+    newd2.style.width = demo_2.width + "px";
+    newd2.style.height = demo_2.height + "px";
+    newd2.style.background = demo_2.background;
+    newd2.style.text = "ddddd"
+
+    // document.getElementById("#demo1").appendChild(demo_1);
 
 
 </script>
