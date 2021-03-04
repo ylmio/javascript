@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //组合继承
+        function Big(name){
+            this.name = name;
+            this.colors = ["red","blue","green"];
+        }
+
+        Big.prototype.sayName = function(){
+            console.log(this.name);
+        }
+
+        function Small(name,age){
+            //私有属性 age
+            this.age = age;
+            //继承属性 name
+            Big.call(this,name);
+        }
+
+        //继承方法
+        Small.prototype = new Big();
+
+        //私有方法
+        Small.prototype.sayAge = function(){
+            console.log(this.age);
+        }
+
+        var aaa = new Small("zhuciqi",20);
+        console.log(aaa);
+
+        aaa.sayAge();
+        aaa.sayName();
+
+        aaa.colors.push("蓝绿");
+        console.log(aaa.colors);
+
+        var bbb = new Small("shadas",39);//["red", "blue", "green", "蓝绿"]
+        console.log(bbb.colors);//["red", "blue", "green"]
+
+    </script>
+</body>
+</html>

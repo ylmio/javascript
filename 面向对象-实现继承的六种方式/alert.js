@@ -36,3 +36,21 @@ alert.prototype = {
     }
 }
 
+function oees(o){
+    function P(){};
+    P.prototype = o;
+    return new P();
+}
+
+var baseOb = {
+    name : "",
+    age : 20,
+    frindens:["a","b","c"]
+};
+
+var o = Object.create(oees(baseOb),{name:{
+    value : "libai"
+}});
+
+console.log(o.name);
+console.log(o.frindens);
