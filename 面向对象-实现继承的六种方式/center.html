@@ -4,105 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>相对定位</title>
     <style>
-        #outcon{
-            position: relative;
-            top: 10px;
-            left: 10px;
-            background-color: aquamarine;
-        }
-        #demo{
-            /* position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto; */
-            /* top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 500px;
-            height: 300px;
-            background-color: aquamarine;
-            color: red; */
-        }
+    #news {
+        width: 500px;
+        border: 1px solid red;
+    }
+    #news >p{
+        position: relative;
+        left: 30px;
+        margin-left: 10px;
+    }
+
     </style>
 </head>
 <body>
-    
-    <div id="outcon">
-        <div id="demo">
-            <h3>zheshilimiandeneir</h3>
-        </div>
+    <div id="news">
+        <h1>中国2021年国防支出增长6.8%</h1>
+        <p>记者从5日上午开幕的十三届全国人大四次会议获悉,根据会上提交审议的预算草案，中国今年的国防支出为13553.43亿元人民币（约2090亿美元），比2020年增长6.8％。专家认为，军费持续、稳定地理性增长，是由于中国有效管控住疫情，经济迅速恢复，得以继续推动军事现代化的建设。</p>
     </div>
 
-    <script type="text/html">
-        //传统上我们通过构造函数来生成实例对象
-        function Point(x, y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        Point.prototype.toString = function () {
-            return '(' + this.x + ',' + this.y + ')';
-        };
-
-        var p = new Point(1, 2);
-        console.log(p.toString()); //(1,2)
-
-        //现在，我们通过 Class 来生成实例对象
-        class _Point{
-            constructor(x,y){
-                this.x = x;
-                this.y = y;
-            }
-            toString(){
-                return '(' + this.x + ',' + this.y + ')'
-            }
-            makeOhter(){
-
-            }
-
-        }
-
-        var pp = new _Point(1,2);
-        console.log(pp.toString());//(1,2)   
-    </script>
-
-    <script>
-        class Point{
-            constructor(x,y){
-                this.x = x;
-                this.y = y;
-            }
-            toString(){
-                //...
-            }
-        }
-
-        let p1 = new Point(1,3);
-
-
-        Object.assign(Object.getPrototypeOf(p1),{
-            toRunning(){
-            console.log("to running");
-        }
-        });
-
-        let p2 = new Point(1,3);
-
-        p2.toRunning();// to running
-
-        
-        
-
-
-
-        
-
-
-
-    </script>
 </body>
 </html>
