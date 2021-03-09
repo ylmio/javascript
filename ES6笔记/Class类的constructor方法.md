@@ -41,7 +41,6 @@ let p2 = new Person();
 console.log(p1);
 console.log(p2);
 
-
 //类必须使用 new 命令调用，否则会报错。这是类与普通构造函数的主要区别，后者不用 new 也可以执行 
 class Wangpa{
     constructor(){
