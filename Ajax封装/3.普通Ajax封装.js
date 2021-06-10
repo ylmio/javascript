@@ -3,67 +3,67 @@
 //data:{usrname:zhangsan,age:15}这样的格式
 //dataType:请求返回的数据格式
 //async:true表示同步，false表示异步
-function myAjax(obj){
+function myAjax(obj) {
     var defaults = {
-        type:"get",
-        url:"#",
-        data:{},
-        dataType:"json",
-        success:function(result){
+        type: "get",
+        url: "#",
+        data: {},
+        dataType: "json",
+        success: function(result) {
             console.log(result);
         },
-        async:true
+        async: true
     };
-    for(var key in obj){
+    for (var key in obj) {
         defaults[key] = obj[key];
     }
     var xhr = null;
-    if(window.XHRHttpRequest){
+    if (window.XHRHttpRequest) {
         xhr = new XHRHttpRequest();
-    }else{
+    } else {
         xhr = new ActiveXObject("Microsoft.XMLHttp");
     }
     var params = "";
-    for(var attr in defaults.data){
-        params += attr +"=" +defaults.data[attr] + "&";
+    for (var attr in defaults.data) {
+        params += attr + "=" + defaults.data[attr] + "&";
     }
-    if(params){
-        params = params.substring(0,params.length-1);
+    if (params) {
+        params = params.substring(0, params.length - 1);
     }
-    if(defaults.type=="get"){
-        defaults.url += "?"+params;
+    if (defaults.type == "get") {
+        defaults.url += "?" + params;
     }
-    xhr.open(defaults.type,defaults.url,defaults.async);
-    if(defaults.type=="get"){
+    xhr.open(defaults.type, defaults.url, defaults.async);
+    if (defaults.type == "get") {
         xhr.send(null);
-    }else if(defaults.type=="post"){
-        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+    } else if (defaults.type == "post") {
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
         xhr.send(params);
     }
-    if(defaults.async){
-        xhr.onreadystatechange = function(){
-            if(xhr.readyState ==4&&xhr.status==200){
+    if (defaults.async) {
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
                 var result = null;
-                if(defaults.dataType=="json"){
+                if (defaults.dataType == "json") {
                     result = xhr.responseText;
                     result = JSON.parse(result);
-                }else if(defaults.dataType=="xml"){
+                } else if (defaults.dataType == "xml") {
                     result = xhr.responseXML;
-                }else{
+                } else {
                     result = xhr.responseText;
                 }
                 defaults.success(result);
             }
         }
-    }else{
-        if(xhr.readyState ==4&&xhr.status==200){
+    } else {
+        if (xhr.readyState == 4 && xhr.status == 200) {
             var result = null;
-            if(defaults.dataType=="json"){
+            if (defaults.dataType == "json") {
                 result = xhr.responseText;
                 result = JSON.parse(result);
-            }else if(defaults.dataType=="xml"){
+            } else if (defaults.dataType == "xml") {
                 result = xhr.responseXML;
-            }else{
+            } else {
                 result = xhr.responseText;
             }
             defaults.success(result);

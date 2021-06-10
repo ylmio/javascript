@@ -64,3 +64,11 @@ for (let i = 0; i < 3; i++) {
 ```
 
 上面代码正确运行，输出了 3 次`abc`。这表明函数内部的变量`i`与循环变量`i`不在同一个作用域，有各自单独的作用域。
+
+https://esim.10010sh.cn/mobile/rest/busiDeal/init?eid=89086001202200120120000000765765&imei=868697030217676
+
+https://esim.10010sh.cn/mobile/rest/busiDeal/init?eid=89033023424110000000001685709351&imei=866732044583269
+
+
+
+https://esim.10010sh.cn/mobile/rest/viceCardOpen/qryNameCity?eid=89086001202200101018000000302112&imei=863860040020409&phone=132200000&iccid=8986011872310060571

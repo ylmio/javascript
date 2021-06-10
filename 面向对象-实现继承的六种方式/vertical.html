@@ -5,22 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vertical</title>
-    <style>
-        #box{
-            width: 600px;
-            height: 300px;
-            line-height: 300px;
-            border: 1px solid red;
-        }
-        #box>img{
-            height: 200px;
-            /* vertical-align: middle; */
-        }
-    </style>
 </head>
 <body>
-    <div id="box">
-        <img src="./images/zero.jpg" alt="">
-    </div>
+    <script type="text">
+
+        class Foo{
+            getValue(){
+                console.log("dddd");
+            }
+        }
+        class SmallFoo extends Foo{
+
+        }
+        let small1 = new SmallFoo();
+        small1.getValue();
+
+    </script>
+    <script>
+        class Point{
+            constructor(x,y){
+                this.x = x;
+                this.y = y;
+            }
+            static copySome(){
+                console.log("来点什么....");
+            }
+        }
+        class SmallPoint extends Point{
+            constructor(x,y,color){
+                super(x,y);
+                this.color = color;
+            }
+        }
+
+        let a = Object.getPrototypeOf(SmallPoint).name;
+        console.log(a);
+
+        console.log(Object.getPrototypeOf(SmallPoint)===Point);
+
+    </script>
 </body>
 </html>

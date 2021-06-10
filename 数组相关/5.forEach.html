@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //字符串数组
+        var students = ["张三", "李四", "王五"];
+        //json 数组
+        var classmates = [{
+            name: "张三",
+            age: 30
+        }, {
+            name: "李四",
+            age: 40
+        }, {
+            name: "王五",
+            age: 50
+        }, ];
+        //数字数组
+        var numArr = [10, 20, 30, 40];
+
+        var sfsf = [10, {
+            "name": "张三"
+        }, 30, 40];
+
+        var ffsds = [
+            function aaa() {
+                return "aaa"
+            },
+            function bbb() {
+                return "bbb"
+            },
+            function ccc() {
+                return "ccc"
+            },
+        ];
+
+        function quChong(arr) {
+            let obj = [];
+            arr.forEach(function(i) {
+                console.log(i);
+
+
+            });
+        }
+        // quChong(students);
+        // quChong(classmates);
+        // quChong(numArr);
+        // quChong(sfsf);
+        // quChong(ffsds[0].aaa());
+
+        var jsOB = JSON.stringify(classmates);
+        console.log(jsOB);
+    </script>
+</body>
+
+</html>
