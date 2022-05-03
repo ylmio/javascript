@@ -76,7 +76,7 @@
 		EventUtil.addHandler(btn, "click", handler.handleClick);//undefined
 
 		/*
-		虽然貌似应该打印输出 Event handled,然而实际上显示的是undefined。这个问题在于没有保存handler.handleClick()的环境，所以this对象最后指向了DOM按钮而非handler(IE8中指向window。)可以如下面例子所示，使用一个闭包来修正这个问题。
+		虽然好像应该打印输出 Event handled,然而实际上显示的是undefined。这个问题在于没有保存handler.handleClick()的环境，所以this对象最后指向了DOM按钮而非handler(IE8中指向window。)可以如下面例子所示，使用一个闭包来修正这个问题。
 		*/
 		var handler = {
 			message: "Event handled",
